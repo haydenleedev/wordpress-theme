@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="214.92" height="219.44" viewBox="0 0 214.92 219.44">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        opacity: 0.49;
+      }
+
+      .cls-3, .cls-4 {
+        mix-blend-mode: multiply;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-4 {
+        opacity: 0.22;
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="3729.15" y1="2803.19" x2="3645.17" y2="2605.35" gradientTransform="matrix(-0.71, 0.71, 0.71, 0.71, 802.47, -4411.96)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00aefc"/>
+      <stop offset="0.04" stop-color="#0eb3f9" stop-opacity="0.85"/>
+      <stop offset="0.09" stop-color="#1fb9f6" stop-opacity="0.67"/>
+      <stop offset="0.15" stop-color="#2ebff4" stop-opacity="0.51"/>
+      <stop offset="0.22" stop-color="#3bc4f1" stop-opacity="0.37"/>
+      <stop offset="0.29" stop-color="#46c8ef" stop-opacity="0.26"/>
+      <stop offset="0.36" stop-color="#4fcbee" stop-opacity="0.16"/>
+      <stop offset="0.45" stop-color="#56ceed" stop-opacity="0.09"/>
+      <stop offset="0.55" stop-color="#5ad0ec" stop-opacity="0.04"/>
+      <stop offset="0.68" stop-color="#5dd1eb" stop-opacity="0.01"/>
+      <stop offset="0.97" stop-color="#5ed1eb" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-10.07" y1="3676.68" x2="-94.04" y2="3478.84" gradientTransform="matrix(0.4, 0.92, 0.92, -0.4, -3155.84, 1575.08)" xlink:href="#linear-gradient"/>
+  </defs>
+  <title>circle-transition-bg</title>
+  <g class="cls-1">
+    <g id="Layer_1" data-name="Layer 1">
+      <g>
+        <g class="cls-2">
+          <circle class="cls-3" cx="107.46" cy="107.46" r="107.43"/>
+          <circle class="cls-4" cx="107.46" cy="107.46" r="107.43"/>
+        </g>
+        <circle class="cls-5" cx="107.46" cy="117.89" r="101.55"/>
+      </g>
+    </g>
+  </g>
+</svg>
