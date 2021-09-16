@@ -17,7 +17,7 @@ module.exports = {
   },
   mode: "production",
   output: {
-    filename: "js/app-qab1744ab2.js",
+    filename: "js/app-zab1744ab2.js",
     libraryTarget: "var",
     library: "Client", // All of our javascipt code is accessible through this Client library.
   },
@@ -61,7 +61,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // all options are optional
-      filename: "css/app-qc7bd6bdc9.css",
+      filename: "css/app-zc7bd6bdc9.css",
       //chunkFilename: '[id].css',
       ignoreOrder: false, // Enable to remove warnings about conflicting order
     }),

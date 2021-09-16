@@ -5,7 +5,15 @@ $title                   = get_sub_field( 'title' );
 $button                  = get_sub_field( 'button' );
 $background              = get_sub_field( 'background_image' );
 $htag       = ( get_sub_field('htag') ) ? get_sub_field('htag') : "h2";
+$cloudinaryVideo        = get_field( 'add_cloudinary_video' );
 ?>
+
+<?php if($cloudinaryVideo) { ?>
+    <link href="https://unpkg.com/cloudinary-video-player@1.5.3/dist/cld-video-player.light.min.css" rel="stylesheet">
+<script src="https://unpkg.com/cloudinary-core@latest/cloudinary-core-shrinkwrap.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/cloudinary-video-player@1.5.3/dist/cld-video-player.light.min.js"
+type="text/javascript"></script>
+<?php } ?>
 
 <?php if ( have_rows( 'columns' ) ) { ?>
     <section<?php echo ( $sectionId != '' ) ? ' id="' . $sectionId . '"' : ''; ?> class="image-text-rows">
@@ -18,7 +26,9 @@ $htag       = ( get_sub_field('htag') ) ? get_sub_field('htag') : "h2";
             <?php } ?>
 
             <div class="all-items">
-                <?php while ( have_rows( 'columns' ) ) {
+                <?php 
+                   $count = 1;
+                while ( have_rows( 'columns' ) ) {
                     the_row();
                     $rowId           = get_sub_field( 'row_id' );
                     $columnTitle     = get_sub_field( 'title' );
@@ -30,12 +40,61 @@ $htag       = ( get_sub_field('htag') ) ? get_sub_field('htag') : "h2";
                     $columnImage     = get_sub_field( 'image' );
                     $altText         = get_sub_field( 'alt_text' ); 
                     $htag2       = ( get_sub_field('htag2') ) ? get_sub_field('htag2') : "h3";
+                    $addingVideo         = get_sub_field( 'adding_video' ); 
+                    $video         = get_sub_field( 'video' ); 
+                    $imgWidth   = get_sub_field('image_width') ? get_sub_field('image_width') : $columnImage['width'];
+                    $imgHeight   = get_sub_field('image_height') ? get_sub_field('image_height') : $columnImage['height'];
                     ?>
                     <div<?php echo ( $rowId != '' ) ? ' id="' . $rowId . '"' : ''; ?> class="row <?php echo ( $columnSide ) ? 'image-on-right' : 'image-on-left'; ?>">
                         <div class="wrapper">
-                            <div class="round-image">
-                                <img alt="<?php echo $altText ?>" src="<?php echo $columnImage['url']; ?>">
-                            </div>
+
+                           
+                                <?php if (!$addingVideo) { ?>
+                                    <div class="round-image mb-40px">
+                                    <img alt="<?php echo $altText ?>" src="<?php echo $columnImage['url']; ?>" width="<?php echo $imgWidth; ?>" height="<?php echo $imgHeight; ?>">
+                                    </div>
+                                <?php } else { ?>
+                                    
+                                        <div class="round-image pt-30px">
+
+                                   
+
+        <video
+            id="ujet-player-<?php echo $count; ?>"
+            controls
+            class="ujet-video-player" width="540" height="478">
+        </video>
+
+        <script>
+        var player = [];
+
+        var cld = cloudinary.Cloudinary.new({ cloud_name: "ujet-videos"});
+        player['<?php echo $count; ?>'] = cld.videoPlayer('ujet-player-<?php echo $count; ?>', {
+            "fluid": false,
+            "controls": true,
+            "muted": true,
+            "colors": {
+                "accent": "#ffffff"
+            },
+            "hideContextMenu": true,
+            "autoplay": true,
+            "showLogo": false,
+            "loop": true,
+            "transformation": {quality: "auto", width: 900, crop: "scale"}
+        });
+
+        var $videoSource = {
+                publicId: '<?php echo $video; ?>'
+            }
+
+        player['<?php echo $count; ?>'].source($videoSource);
+        </script>
+                                   
+
+                                    </div>
+                                 <?php $count++; } ?>
+                            
+
                             <div class="description">
                                 <?php if ( ! empty( $columnTitle ) ) { ?>
                                     <<?php echo $htag2; ?> class="description__title"><?php echo $columnTitle ?></<?php echo $htag2; ?>>
@@ -97,3 +156,5 @@ $htag       = ( get_sub_field('htag') ) ? get_sub_field('htag') : "h2";
         </div>
     </section>
 <?php } ?>
+
+

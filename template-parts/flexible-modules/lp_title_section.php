@@ -16,7 +16,7 @@ $image = get_sub_field('right_image');
                     <?php if ($subtitle != '') { ?>
                         <i></i>
                     <?php } ?>
-                    <div class="title"><?php echo $title; ?></div>
+                    <h1 class="title"><?php echo $title; ?></h1>
                 </div>
             </div>
             <div class="col-md-6 image" style="background-image: url('<?php echo $image['url']; ?>')">

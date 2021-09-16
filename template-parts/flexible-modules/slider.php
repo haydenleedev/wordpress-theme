@@ -32,12 +32,15 @@ if (!$numberOfItemsPerSlide) {
                 <?php if (!$useImageOrVideo) {
                     $slideMedia = $slides[$index]['image'];
                     $altText = $slides[$index]['alt_text'];
-                    $slideLink = $slides[$index]['link']; ?>
+                    $slideLink = $slides[$index]['link']; 
+                    $imgWidth   = $slides[$index]['image_width'] ? $slides[$index]['image_width'] : "300";
+                    $imgHeight   = $slides[$index]['image_height'] ? $slides[$index]['image_height'] : "170";
+                    ?>
                     <div class="slide__content">
 
                         <div class="slide__media slide__image">
                         <?php echo (!empty($slideLink)) ? '<a href="' . $slideLink['url'] . '" target="' . $slideLink['target'] . '">' : ''; ?>
-                            <img alt="<?php echo $altText; ?>" src="<?php echo $slideMedia['url']; ?>">
+                            <img alt="<?php echo $altText; ?>" src="<?php echo $slideMedia['url']; ?>" width="<?php echo $imgWidth; ?>" height="<?php echo $imgHeight; ?>">
                             <?php echo (!empty($slideLink)) ? '</a>' : ''; ?>
                         </div>
                         
@@ -57,13 +60,15 @@ if (!$numberOfItemsPerSlide) {
                                 <?php echo $slideTitle; ?>
                                 <?php echo (!empty($slideLink)) ? '</a>' : ''; ?>
 
+                                <?php if ($slideLink['url']) { ?>
                                 <p class="read-more">
-
                                 <?php echo (!empty($slideLink)) ? '<a href="' . $slideLink['url'] . '" target="' . $slideLink['target'] . '">' : ''; ?>
                                 Read more > 
                                 <?php echo (!empty($slideLink)) ? '</a>' : ''; ?>
-                                
                                 <p>
+                                <?php } ?>
+
+
                                 </div>
 
                         

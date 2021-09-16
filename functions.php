@@ -223,6 +223,37 @@ add_action( 'init', 'create_software_integration' );
 
 
 
+
+// START: Prices - custom post type
+function create_price() {
+
+    register_post_type( 'price',
+        // CPT Options
+        array(
+            'labels'              => array(
+                'name'          => __( 'Prices' ),
+                'singular_name' => __( 'Price' )
+            ),
+            'show_ui'             => true,  // you should be able to edit it in wp-admin
+            'exclude_from_search' => true,  // you should exclude it from search results
+            'public'              => true,  // it's public, it should have it's own permalink
+            'publicly_queryable'  => true,
+            'show_in_nav_menus'   => false, // you shouldn't be able to add it to menus
+            'has_archive'         => false, // it shouldn't have archive page
+            'rewrite'             => array( 'slug' => 'pricing', 'with_front' => false ),
+            'supports'            => array( 'title', 'editor', 'thumbnail' )
+        )
+    );
+}
+
+// Hooking up our function to theme setup
+add_action( 'init', 'create_price' );
+
+// END: Prices - custom post type
+
+
+
+
 if ( ! function_exists( 'ujet_posted_on' ) ) {
     /**
      * Prints HTML with meta information for the current post-date/time.
@@ -400,4 +431,68 @@ function my_acf_fields_post_object_query( $args, $field, $post_id ) {
     $args['post_status'] = array( 'publish' );
 
     return $args;
+}
+
+
+add_filter( 'wpseo_robots', 'wpseo_robots' );
+/**
+ * Filter: 'wpseo_robots' - Allows filtering of the meta robots output of Yoast SEO.
+ *
+ * @param string $robotsstr The meta robots directives to be echoed.
+ * @return string
+ */
+function wpseo_robots( $robotsstr ) {
+	if ( is_single() && in_category( 32 ) ) {
+		return 'noindex,follow';
+	}
+	return $robotsstr;
+}
+
+add_filter( 'wpseo_exclude_from_sitemap_by_post_ids', function( $excluded_posts_ids ) {
+	$args = array(
+		'fields'         => 'ids',
+		'post_type'      => 'post',
+		'category__in'   => array( 32 ),
+		'posts_per_page' => -1,
+	);
+
+	return array_merge( $excluded_posts_ids, get_posts( $args ) );
+} );
+
+// Add custom fields to primary navigation menu
+
+function menu_item_desc( $item_id, $item ) {
+	$menu_item_desc = get_post_meta( $item_id, '_menu_item_desc', true );
+	?>
+	<div style="clear: both;">
+	    <span class="description"><?php _e( "Item Description", 'menu-item-desc' ); ?></span><br />
+	    <input type="hidden" class="nav-menu-id" value="<?php echo $item_id ;?>" />
+	    <div class="logged-input-holder">
+	        <input type="text" name="menu_item_desc[<?php echo $item_id ;?>]" id="menu-item-desc-<?php echo $item_id ;?>" value="<?php echo esc_attr( $menu_item_desc ); ?>" />
+	    </div>
+	</div>
+	<?php
+}
+add_action( 'wp_nav_menu_item_custom_fields', 'menu_item_desc', 10, 2 );
+
+function save_menu_item_desc( $menu_id, $menu_item_db_id ) {
+	if ( isset( $_POST['menu_item_desc'][$menu_item_db_id]  ) ) {
+		$sanitized_data = sanitize_text_field( $_POST['menu_item_desc'][$menu_item_db_id] );
+		update_post_meta( $menu_item_db_id, '_menu_item_desc', $sanitized_data );
+	} else {
+		delete_post_meta( $menu_item_db_id, '_menu_item_desc' );
+	}
+}
+add_action( 'wp_update_nav_menu_item', 'save_menu_item_desc', 10, 2 );
+
+// Enqueue Theme JS w React Dependency
+add_action( 'wp_enqueue_scripts', 'my_enqueue_theme_js' );
+function my_enqueue_theme_js() {
+  wp_enqueue_script(
+    'my-theme-frontend',
+    get_stylesheet_directory_uri() . '/build/index.js',
+    ['wp-element'],
+    time(), // Change this to null for production
+    true
+  );
 }

@@ -8,7 +8,8 @@
 <!doctype html>
 <html class="no-js" <?php language_attributes(); ?> >
 <head class="">
-	<script src="https://www.googleoptimize.com/optimize.js?id=OPT-MN3V3RH"></script>
+
+    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-WCZG2QZ"></script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -17,10 +18,26 @@
     })(window,document,'script','dataLayer','GTM-539SHWG');</script>
     <!-- End Google Tag Manager -->
 
+    <?php
+        $meta = get_field('meta_script');
+        if ($meta) {
+            echo $meta;
+        }
+    ?>
+
+    <meta name="ga_user_id__c" content="" id="ga-user-id" />
+    <meta name="ga_user_each_id__c" content="" id="ga-user-each-id" />
+    <meta name="ga_cookie_id__c" content="" id="ga-cookie-id" />
+    <meta name="ga_em_id__c" content="" id="ga-em-id" />
+    <meta name="ga_page" content="" id="ga-page-url" />
+    <meta name="ga_date__c" content="" id="ga-date" />
+    <meta name="ga_cookie_date__c" content="" id="ga-cookie-date" />
     <meta charset="<?php bloginfo( 'charset' ); ?>"/>
     <link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/favicon.ico"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta name="google-site-verification" content="DKsVwarxHj4jiJRsihUx3ciAd5Ts7JPQtPFzbPXHirs">
+	<meta name="google-site-verification" content="l9IinNTespJHrcfBRWuz65qhVjuU46Cy7PVw1lBxfIk" />
+    <meta name="facebook-domain-verification"content="yr5v61vyrug68ew5f80csgqi2f92oh" />
     <?php if ( get_field( 'check' ) ) { ?>
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&amp;subset=japanese" rel="stylesheet">
     <?php } ?>
@@ -249,24 +266,54 @@ body_class( $blog_class ); ?>>
 //if ( IS_BLOG === null || IS_BLOG === true ) { // IF IT IS BLOG
 //    include( __DIR__ . '/blog/header.php' );
 //} else { ?>
-    <?php $staticLogo = get_field( 'static_logo', 'option' ); ?>
+    <?php 
+    $staticLogo = get_field( 'static_logo', 'option' ); 
+    $rowOne = get_field( 'number_of_columns'); 
+    $rowTwo = ($rowOne == 'two_cols') ? "grid-row-2" : $rowOne;
+    $rowThree = ($rowOne == 'three_cols') ? "grid-row-3" : $rowTwo;
+    $rowFour = ($rowOne == 'four_cols') ? "grid-row-4" : $rowThree;
+
+    ?>
     <header class="header">
         <div class="header__container">
-            <div class="site-branding">
-                <a href="<?php echo bloginfo( 'url' ); ?>">
-                    <img class="header__logo" alt="ujet logo"
-                         src="<?php echo $staticLogo ?: get_stylesheet_directory_uri() . '/dist/images/ujet-logo.svg'; ?>" width="90" height="50">
-                </a>
-            </div>
-            <span class="menu_hamburger"></span>
-            <div class="header__menu">
-                <?php wp_nav_menu( array(
+            
+            <nav role="presentation" aria-label="Main Navigation" class="header__menu" id="primary-nav">
+
+            <ul class="site-branding">
+                <li>
+                    <a href="<?php echo bloginfo( 'url' ); ?>">
+                        <img class="header__logo" alt="ujet logo"
+                            src="<?php echo $staticLogo ?: get_stylesheet_directory_uri() . '/dist/images/ujet-logo.svg'; ?>" width="130" height="41">
+                    </a>
+                </li>
+                <li class="mobile-menu">
+                    <a class="menu_hamburger">Toggle Mobile Menu</a>
+                </li>
+            </ul>
+            
+
+                <?php 
+                wp_nav_menu( array(
                     'theme_location' => 'top-bar-r',
                     'menu_class'     => 'top-menu',
                     'container'      => '',
                     'before'         => '',
+                    //'walker' => new My_Walker_Nav_Menu(),
                 ) );
+
+                /*
+                class My_Walker_Nav_Menu extends Walker_Nav_Menu {
+                    function start_lvl(&$output, $depth){ 
+                    $indent = str_repeat("\t", $depth);
+                    $rowOne = get_field( 'number_of_columns'); 
+                    $rowTwo = ($rowOne == 'two_cols') ? "grid-row-2" : $rowOne;
+                    $rowThree = ($rowOne == 'three_cols') ? "grid-row-3" : $rowTwo;
+                    $rowFour = ($rowOne == 'four_cols') ? "grid-row-4" : $rowThree;
+                    $output .= "\n$indent<ul class=\"sub-menu $rowFour \">\n";                    
+                      }}
+                      */
                 ?>
+                </nav>
             </div>
         </div>
     </header>

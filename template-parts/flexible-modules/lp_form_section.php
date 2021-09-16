@@ -4,6 +4,7 @@ $title = get_sub_field('title');
 $description = get_sub_field('description');
 $formTitle = get_sub_field('form_title');
 $formShortcode = get_sub_field('form_shortcode');
+$htag       = ( get_sub_field('htag') ) ? get_sub_field('htag') : "h1";
 ?>
 
 <?php if ($formShortcode != '') { ?>
@@ -13,7 +14,10 @@ $formShortcode = get_sub_field('form_shortcode');
                 <?php if ($title != '' || $description != '') { ?>
                     <div class="col-left form-description">
                         <div class="description-container">
-                            <h2 class="title"><?php echo $title; ?></h2>
+                        <?php if ($title != '') { ?>
+                            <<?php echo $htag; ?> class="title"><?php echo $title; ?></<?php echo $htag; ?>>
+                            <?php } ?>
+
                             <div class="description"><?php echo $description; ?></div>
                         </div>
                     </div>

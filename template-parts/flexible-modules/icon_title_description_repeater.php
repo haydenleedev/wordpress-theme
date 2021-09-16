@@ -4,6 +4,8 @@ $title      = get_sub_field( 'section_title' );
 $background = get_sub_field( 'background_image' );
 $image      = get_sub_field('image');
 $htag       = ( get_sub_field('htag') ) ? get_sub_field('htag') : "h2";
+$imgWidth   = get_sub_field('image_width') ? get_sub_field('image_width') : $image['width'];
+$imgHeight   = get_sub_field('image_height') ? get_sub_field('image_height') : $image['height'];
 ?>
 
 <?php if ( $title != '' || have_rows( 'repeater' ) ) { ?>
@@ -16,7 +18,7 @@ $htag       = ( get_sub_field('htag') ) ? get_sub_field('htag') : "h2";
 
             <?php if ( ! empty( $image  ) ) { ?>
             <div class="image">
-                    <img src="<?php echo $image['url']; ?>" alt="Section image">
+                    <img src="<?php echo $image['url']; ?>" alt="" width="<?php echo $imgWidth; ?>" height="<?php echo $imgHeight; ?>">
             </div>
             <?php } ?>
 
@@ -37,6 +39,8 @@ $htag       = ( get_sub_field('htag') ) ? get_sub_field('htag') : "h2";
                         $altText     = get_sub_field( 'alt_text' );
                         $columnText  = get_sub_field( 'text' ); 
                         $link      = get_sub_field('link');
+                        $colImgWidth   = get_sub_field('image_width') ? get_sub_field('image_width') : $columnIcon['width'];
+                        $colImgHeight   = get_sub_field('image_height') ? get_sub_field('image_height') : $columnIcon['height'];
                         ?>
 
                         <div class="col <?php echo ( $columnsCount > 1 ) ? 'col-md-6' : 'col-md-12'; ?>">
@@ -44,7 +48,7 @@ $htag       = ( get_sub_field('htag') ) ? get_sub_field('htag') : "h2";
                                 <?php
 
                                 if ( isset( $columnIcon['url'] ) ) { ?>
-                                    <img alt="<?php echo $altText; ?>" src="<?php echo $columnIcon['url']; ?>">
+                                    <img alt="<?php echo $altText; ?>" src="<?php echo $columnIcon['url']; ?>" width="<?php echo $colImgWidth; ?>" height="<?php echo $colImgHeight; ?>">
 
                                     <?php
                                 }

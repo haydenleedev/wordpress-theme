@@ -1,13 +1,18 @@
 <?php
 $sectionId = get_sub_field('section_id');
 $title = get_sub_field('title');
+$subtitle= get_sub_field('subtitle');
 $team = get_sub_field('team');
 ?>
 
 <?php if (!empty($team)) { ?>
     <section<?php echo ($sectionId != '') ? ' id="' . $sectionId . '"' : ''; ?> class="team-section">
         <div class="grid-container">
-            <h1 class="section-title"><?php echo $title; ?></h1>
+            <h1 class="text-40px text-center text-600"><?php echo $title; ?></h1>
+
+            <?php if (!empty($subtitle)) { ?>
+            <p class="text-24px text-600 subtitle text-center"><?php echo $subtitle; ?></p>
+            <?php } ?>
 
             <div class="team all-items">
                 <?php
@@ -21,13 +26,18 @@ $team = get_sub_field('team');
                         $memberId = $post->ID;
                         $memberImage = get_field("image");
                         $memberPosition = get_field("position");
-                        $memberDescription = get_field("description"); ?>
+                        $memberDescription = get_field("description"); 
+                        $memberLinkedin = get_field('linkedin');
+                        $memberTwitter = get_field('twitter');
+                        ?>
 
                         <div class="member" data-member-id="<?php echo $memberId; ?>">
                             <div class="member__thumbnail" style="position:relative;">
-                                <?php echo $memberImage['url'] ? '<img alt="' . $post->post_title . '" src="' . $memberImage['url'] . '"/>' : ''; ?>
-                                <img alt="circle background" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/circle-transition-bg.svg"
-                                     style="width: 263px;    position: absolute;    top: -16px;    left: 12px;    z-index: -1;">
+                                <span class="navy-hover">
+                                    <span class="btn-white">Read Bio</span>
+                                </span>
+                                <?php echo $memberImage['url'] ? '<img width="263" height="263" class="circle" alt="' . $post->post_title . '" src="' . $memberImage['url'] . '"/>' : ''; ?>
+                                
                             </div>
                             <div class="member__title">
                                 <a href="#" class="member__popup--trigger"
@@ -40,16 +50,12 @@ $team = get_sub_field('team');
                         </div>
                         <div class="member__popup white-popup mfp-hide" data-member-id="<?php echo $memberId; ?>">
                             <div class="member__popup--content">
-                                <div class="mfp-close"><img alt="close button"
-                                            src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/close-x.svg">
+                                <div class="mfp-close">
+                                <button class="close" tabindex="-1">×</button>
                                 </div>
                                 <div class="col col-left">
                                     <div class="member__thumbnail">
-                                        <img alt="circle background" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/circle-transition-bg.svg"
-                                             style="    width: 230px;
-    position: absolute;
-    top: -12px;
-    left: 10px;">
+  
                                         <?php echo $memberImage['url'] ? '<img alt="' . $post->post_title . '" src="' . $memberImage['url'] . '"/>' : ''; ?>
                                     </div>
                                 </div>
@@ -60,8 +66,18 @@ $team = get_sub_field('team');
                                     <div class="member__position">
                                         <?php echo $memberPosition; ?>
                                     </div>
+                                    
                                     <div class="member__description">
                                         <?php echo $memberDescription; ?>
+                                    </div>
+
+                                    <div class="member__sns">
+                                    <?php if (!empty($memberLinkedin)) { ?>
+                                        <a href="<?php echo $memberLinkedin; ?>" class="linkedin" target="_blank" rel="nofollow noindex noopener"></a>
+                                    <?php } ?>
+                                    <?php if (!empty($memberTwitter)) { ?>
+                                        <a href="<?php echo $memberTwitter; ?>" class="twitter" target="_blank" rel="nofollow noindex noopener"></a>
+                                    <?php } ?>
                                     </div>
                                 </div>
                             </div>

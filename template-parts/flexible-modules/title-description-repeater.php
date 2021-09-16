@@ -6,16 +6,19 @@ $button = get_sub_field('button');
 $separator = get_sub_field('separator');
 $repeater_separator = get_sub_field('repeater_separator');
 $htag       = ( get_sub_field('htag') ) ? get_sub_field('htag') : "h1";
+$classDesHelper       = (get_sub_field('class_description') == 'medium') ? "w-800px aligncenter mt-20px" : "description aligncenter mt-20px";
+$classDes       = (get_sub_field('class_description') == 'wide') ? "description-wide aligncenter" : $classDesHelper;
+$textAlign       = ( get_sub_field('align') ) ? " text-left" : "";
 ?>
 
 <?php if ($title != '' || $description != '' || have_rows('repeater')) { ?>
-    <section<?php echo ($sectionId != '') ? ' id="' . $sectionId . '"' : ''; ?> class="support">
+    <section<?php echo ($sectionId != '') ? ' id="' . $sectionId . '"' : ''; ?> class="support<?php echo $textAlign ; ?>">
         <div class="grid-container">
             <?php if (!empty($title)) { ?>
                 <<?php echo $htag; ?> class="title"><?php echo $title; ?></<?php echo $htag; ?>>
             <?php } ?>
 
-            <div class="description"><?php echo $description; ?></div>
+            <div class="<?php echo $classDes; ?>"><?php echo $description; ?></div>
             <?php if (!empty($button)) { ?>
                 <div class="btn-container">
                     <a class="btn btn-bright-blue btn-radius" href="<?php echo $button['url']; ?>"

@@ -36,7 +36,7 @@ if ( IS_BLOG === null || IS_BLOG === true ) { // IF IT IS BLOG
             foreach ( $acfFooter["awards"] as $icon ) {
                 $outputAwards .= '<li class="icon">';
                 $outputAwards .= '<a href="' . $icon['image_link']['url'] . '" target="' . $icon['image_link']['target'] . '">';
-                $outputAwards .= '<img src="' . $icon['image']['url'] . '" width="90" height="117">';
+                $outputAwards .= '<img src="' . $icon['image']['url'] . '" width="90" height="117" alt="">';
                 $outputAwards .= '</a>';
                 $outputAwards .= '</li>';
             }
@@ -64,8 +64,8 @@ if ( IS_BLOG === null || IS_BLOG === true ) { // IF IT IS BLOG
         <div class="radius_footer"></div>
         <div class="grid-container-big">
             <div class="logo-footer">
-                <img alt="UJET logo" class="footer__logo"
-                     src="<?php echo get_stylesheet_directory_uri() . '/dist/images/ujet-logo-footer.svg'; ?>" width="100" height="63">
+                <img alt="" class="footer__logo"
+                     src="<?php echo get_stylesheet_directory_uri() . '/dist/images/ujet-logo-footer.svg'; ?>" width="130" height="41">
                 <?php
                 echo $footerPhone;
                 echo $footerLink;
@@ -90,15 +90,25 @@ if ( IS_BLOG === null || IS_BLOG === true ) { // IF IT IS BLOG
 
         </div>
         <div class="sub-footer" aria-label="<?php esc_attr_e( 'Footer', 'twentynineteen' ); ?>">
+        <div class="trust">
             <!--TRUSTE COOKIE POPUP-->
             <div id='teconsent'></div>
             <!--TRUSTE COOKIE POPUP-->
-            <div class="trust"><a
+
+            <div class="block mt-10px">
+                 <div class="inline-block h-39px"><a
                         href="//privacy.truste.com/privacy-seal/validation?rid=c2d82a58-c9ed-4d48-b827-653acbf4d418"
                         target="_ blank"><img style="border: none"
                                               src="//privacy-policy.truste.com/privacy-seal/seal?rid=c2d82a58-c9ed-4d48-b827-653acbf4d418"
-                                              alt="TRUSTe"/></a></div>
+                                              alt="TRUSTe" width="105" height="33"></a></div>
 
+                    <!-- TrustArc CCPA seal -->
+                <div class="inline-block h-36px"><a href='https://submit-irm.trustarc.com/services/validation/bac0a2d7-003d-4c6d-8171-d3fd1756d56d'  target='_blank'>
+                    <img style='border: none' src='https://submit-irm.trustarc.com/services/validation/bac0a2d7-003d-4c6d-8171-d3fd1756d56d/image' alt='TrustArc' width="164" height="44"/>
+                    </a></div>
+                    <!-- END: CCPA seal -->     
+            </div>                            
+        </div>
             <div class="fr">
             <div class="copyright">
                 <div class="copyright-text">
@@ -134,13 +144,12 @@ $isItBlog = strpos($url, '/blog/');
 if ( $isItBlog!==false ) {
     get_template_part( 'template-parts/tracking-codes/google-www-code' );
     get_template_part( 'template-parts/tracking-codes/marketo-munchkin-code' );
-} else if (('ujet.co' === $domain['host'] || 'www.ujet.co' === $domain['host']) && $isItBlog !== true) {
+} else if (('ujet.co' === $domain['host'] || 'www.ujet.co' === $domain['host'] || 'ujet.cx' === $domain['host'] || 'www.ujet.cx' === $domain['host']) && $isItBlog !== true) {
     get_template_part( 'template-parts/tracking-codes/google-www-code' );
     get_template_part( 'template-parts/tracking-codes/marketo-munchkin-code' );
-    get_template_part( 'template-parts/website-chat' );
-} else if ( 'ujet1.scriptics.ro' === $domain['host'] || 'ujet2.scriptics.ro' === $domain['host'] ) {
-    get_template_part( 'template-parts/website-chat' );
-} ?>
+   // get_template_part( 'template-parts/website-chat' );
+}  
+?>
 
 </body>
 </html>

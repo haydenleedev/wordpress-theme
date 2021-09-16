@@ -16,7 +16,7 @@
     })
 
     UJET.initialize({
-        logoUrl: 'https://ujet.co/wp-content/themes/ujet/dist/images/favicon.ico',
+        logoUrl: 'https://ujet.cx/wp-content/themes/ujet/dist/images/favicon.ico',
         translation: `{
             "en": {
               "ujet_message_chat_deflection_default": "We are currently unavailable. If between Monday through Friday, 7am - 5pm PT, then a team member will be available shortly to chat. You can also use our email form.",

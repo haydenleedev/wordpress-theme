@@ -1,11 +1,15 @@
 <?php
 $sectionId = get_sub_field('section_id');
 $button = get_sub_field('button');
-
+$title = get_sub_field('title');
+$htag       = ( get_sub_field('htag') ) ? get_sub_field('htag') : "h2";
 ?>
 
 <section<?php echo ($sectionId != '') ? ' id="' . $sectionId . '"' : ''; ?> class="icon-and-text-rows">
     <div class="grid-container">
+    <div class="grid-container mb-20px">
+            <<?php echo $htag; ?> class="section-title"><?php echo $title; ?> </<?php echo $htag; ?>>
+        </div>
         <div class="all_rows">
             <?php while (have_rows('row')) {
                 the_row();

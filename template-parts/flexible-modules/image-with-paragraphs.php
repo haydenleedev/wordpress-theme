@@ -22,7 +22,9 @@ $htag       = ( get_sub_field('htag') ) ? get_sub_field('htag') : "h1";
                 $htag2       = ( get_sub_field('htag2') ) ? get_sub_field('htag2') : "h3";
                 ?>
                 <div class="row">
+                <?php if (!empty($columnTitle)) { ?>
                     <<?php echo $htag2; ?> class="description__title"><?php echo $columnTitle ?></<?php echo $htag2; ?>>
+                    <?php } ?>
                     <div class="description__text"><?php echo $columnText; ?></div>
                 </div>
             <?php } ?>

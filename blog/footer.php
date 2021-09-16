@@ -19,12 +19,12 @@
            <div class="col-md-12  colmd-9"> 
             <ul class="list-inline"> 
              <li><img src="<?php bloginfo('url'); ?>/files/New%20footer%20Design%208%20Jan%202019/phone_icon.png" class="phone_icon"><a href="#">1-855-242-UJET</a></li> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-             <li><a href="https://www.ujet.co/terms-of-use/">TERMS OF USE</a></li> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
-             <li><a href="https://www.ujet.co/privacy-notice">PRIVACY NOTICE</a></li> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
-             <li><a href="https://www.ujet.co/cookie-notice">COOKIE NOTICE</a></li> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
+             <li><a href="https://www.ujet.cx/terms-of-use/">TERMS OF USE</a></li> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
+             <li><a href="https://www.ujet.cx/privacy-notice">PRIVACY NOTICE</a></li> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
+             <li><a href="https://www.ujet.cx/cookie-notice">COOKIE NOTICE</a></li> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
              <li>© 2019 UJET, INC. ALL RIGHT RESERVED.</li> &nbsp;&nbsp;&nbsp;&nbsp; 
-             <li><a href="https://twitter.com/UJETco"><img src="<?php bloginfo('url'); ?>/files/New%20footer%20Design%208%20Jan%202019/twitter_icon.png" class="images"></a></li>
-             <li><a href="https://www.linkedin.com/company/ujetco/"><img src="<?php bloginfo('url'); ?>/files/New%20footer%20Design%208%20Jan%202019/linkedin.png" class="images"></a></li>
+             <li><a href="https://twitter.com/UJETcx"><img src="<?php bloginfo('url'); ?>/files/New%20footer%20Design%208%20Jan%202019/twitter_icon.png" class="images"></a></li>
+             <li><a href="https://www.linkedin.com/company/ujetcx/"><img src="<?php bloginfo('url'); ?>/files/New%20footer%20Design%208%20Jan%202019/linkedin.png" class="images"></a></li>
              <li><a href="<?php bloginfo('url'); ?>/feed/"><img src="<?php bloginfo('url'); ?>/files/New%20footer%20Design%208%20Jan%202019/rss.png" class="images"></a></li>
             </ul> 
            </div> 
@@ -44,9 +44,9 @@
                 <!--<li><a href="<?php bloginfo('url'); ?>/feed/"><img src="<?php bloginfo('url'); ?>/files/New%20footer%20Design%208%20Jan%202019/rss.png" class="images"></a></li>-->
             </ul> 
             <ul class="list-inline unorder"> 
-             <li><a href="https://www.ujet.co/terms-of-use/">TERMS OF USE</a></li> &nbsp;|&nbsp; 
-             <li><a href="https://www.ujet.co/privacy-notice">PRIVACY NOTICE</a></li> &nbsp;|&nbsp; 
-             <li><a href="https://www.ujet.co/cookie-notice">COOKIE NOTICE</a></li> 
+             <li><a href="https://www.ujet.cx/terms-of-use/">TERMS OF USE</a></li> &nbsp;|&nbsp; 
+             <li><a href="https://www.ujet.cx/privacy-notice">PRIVACY NOTICE</a></li> &nbsp;|&nbsp; 
+             <li><a href="https://www.ujet.cx/cookie-notice">COOKIE NOTICE</a></li> 
              <li>©UJET,2019 INC. ALL RIGHT RESERVED.</li> 
             </ul> 
            </div> 

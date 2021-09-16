@@ -36,9 +36,12 @@ $background = get_sub_field('background_image');
                     <div class="all-items">
                         <?php while (have_rows('images')) { the_row();
                             $image = get_sub_field('image');
-                            $altText = get_sub_field('alt_text');?>
+                            $altText = get_sub_field('alt_text');
+                            $imgWidth   = get_sub_field('image_width') ? get_sub_field('image_width') : "auto";
+                            $imgHeight   = get_sub_field('image_height') ? get_sub_field('image_height') : "auto";  
+                            ?>
                             <div class="item">
-                                <img alt="<?php echo $altText; ?>" src="<?php echo $image['url']; ?>">
+                                <img alt="<?php echo $altText; ?>" src="<?php echo $image['url']; ?>" width="<?php echo $imgWidth; ?>" height="<?php echo $imgHeight; ?>">
                             </div>
                         <?php } ?>
                     </div>

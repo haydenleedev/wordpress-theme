@@ -8,9 +8,15 @@ if ( have_rows( 'content' ) ) :
             case 'work_from_home_box':
                 get_template_part( 'template-parts/flexible-modules/work-from-home-box' );
                 break;
+            case 'html':
+                get_template_part( 'template-parts/flexible-modules/html' );
+                break;
             case 'button':
                  get_template_part( 'template-parts/flexible-modules/button' );
                  break;    
+            case 'popup_timer':
+                 get_template_part( 'template-parts/flexible-modules/popup-timer' );
+                 break;   
             case 'hidden_h1_title':
                 get_template_part( 'template-parts/flexible-modules/hidden-h1-title' );
                 break;    
@@ -95,6 +101,9 @@ if ( have_rows( 'content' ) ) :
             case 'team':
                 get_template_part( 'template-parts/flexible-modules/team' );
                 break;
+            case 'people':
+                get_template_part( 'template-parts/flexible-modules/people' );
+                break;
             case 'events_listing':
                 get_template_part( 'template-parts/flexible-modules/event' );
                 break;
@@ -115,6 +124,9 @@ if ( have_rows( 'content' ) ) :
                 break;
             case 'posts_with_specific_categories':
                 get_template_part( 'template-parts/flexible-modules/posts-with-specific-categories' );
+                break;
+            case 'form_custom':
+                get_template_part( 'template-parts/flexible-modules/form-custom' );
                 break;
             case 'form_with_image':
                 get_template_part( 'template-parts/flexible-modules/form-with-image' );

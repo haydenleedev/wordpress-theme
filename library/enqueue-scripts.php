@@ -35,9 +35,9 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
     function foundationpress_scripts() {
 
         // Enqueue the main Stylesheet.
-        wp_enqueue_style( 'twentynineteen-style', get_template_directory_uri() . '/style.css' );
-        wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'twentynineteen-style' ), null, 'all' );
-        wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.7.0', 'all' );
+       // wp_enqueue_style( 'twentynineteen-style', get_template_directory_uri() . '/style.css' );
+      //  wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'twentynineteen-style' ), null, 'all' );
+      //  wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.7.0', 'all' );
         wp_enqueue_style( 'slick-css', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), '1.8.1', 'all' );
         wp_enqueue_style( 'main-stylesheet', get_stylesheet_directory_uri() . '/dist/css/' . foundationpress_asset_path( 'app.css' ), array(), null, 'all' );
 
@@ -46,9 +46,9 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 
         // CDN hosted jQuery placed in the header, as some plugins require that jQuery is loaded in the header.
         wp_enqueue_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', array(), '3.5.1', false );
-        wp_enqueue_script( 'masonry', 'https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js', array(), '3.3.1', false );
+       // wp_enqueue_script( 'masonry', 'https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js', array(), '3.3.1', false );
         wp_enqueue_script( 'slick', 'https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js', array(), '1.5.01', true );
-        wp_enqueue_script( 'marketo-forms2', 'https://app-sj30.marketo.com/js/forms2/js/forms2.min.js', array(), '', true );
+       // wp_enqueue_script( 'marketo-forms2', 'https://app-sj30.marketo.com/js/forms2/js/forms2.min.js', array(), '', true );
 
         // Enqueue our scripts
         wp_enqueue_script( 'main-js', get_stylesheet_directory_uri() . '/dist/js/' . foundationpress_asset_path( 'app.js' ), array( 'jquery', 'masonry' ), null, true );

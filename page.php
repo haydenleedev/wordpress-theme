@@ -10,11 +10,12 @@
  */
 
 get_header();
+$class   = get_field('class');
 ?>
 
     <?php get_template_part('template-parts/hero'); ?>
 
-    <section id="primary" class="content-area">
+    <section id="primary" class="content-area<?php echo ' ' . $class; ?>">
         <main class="main no-overflow paragraph-wrapper container hh">
 
             <?php get_template_part('template-parts/flexible-content'); ?>

@@ -23,6 +23,7 @@ $ujet_query = new WP_Query( array(
 
 
 if ( $ujet_query->have_posts() ) { ?>
+<h1 class="off-screen"><?php echo $category; ?> | UJET Blog</h1>
     <div class="body-container-wrapper">
         <div class="body-container container-fluid">
             <div class="row-fluid-wrapper row-depth-1 row-number-1 ">

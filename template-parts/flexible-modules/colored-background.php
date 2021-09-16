@@ -8,15 +8,16 @@ $button     = get_sub_field('button');
 $background = get_sub_field('background_image');
 $btnAlign      = get_sub_field( 'btn_align' );
 $htag       = ( get_sub_field('htag') ) ? get_sub_field('htag') : "h2";
+$class  = ( get_sub_field('class') ) ? get_sub_field('class') : "with-background";
 
 ?>
 
 <?php if ($title != '' || $text != '') { ?>
     <section<?php echo ( $sectionId != '' ) ? ' id="' . $sectionId . '"' : ''; ?> class="colored-section">
-        <div class="with-background bg-gradient-blue" <?php echo ($background) ? "style='background-image: url(" . $background['url'] . ")'" : ""; ?>>
+        <div class="<?php echo $class; ?> bg-gradient-blue" <?php echo ($background) ? "style='background-image: url(" . $background['url'] . ")'" : ""; ?>>
             <div class="grid-container">
                 <div class="row<?php echo ( $btnAlign  ) ? ' text-center' : '  text-left'; ?>" >
-                    <div class="<?php echo ($image) ? 'col-md-6 text-right' : 'col-md-12 text-center big-text'; ?> details">
+                    <div class="<?php echo ($image) ? 'col-md-6 text-right' : 'col-md-6 text-right'; ?> details">
 
                         <?php if (!empty($title)) { ?>
                             <<?php echo $htag; ?> class="title"><?php echo $title; ?></<?php echo $htag; ?>>

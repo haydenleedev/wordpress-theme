@@ -17,9 +17,9 @@ if ( ! function_exists( "current_domain" ) ) {
 
 $arrayWithDomainsToStopTheSearchFunctionality = array(
     // PROD environment
-    'ujet.co',
-    'www.ujet.co',
-    'blog.ujet.co',
+    'ujet.cx',
+    'www.ujet.cx',
+    'ujet.cx/blog',
     // DEV environments
     'ujetstage.wpengine.com',
     'ujetdwv.wpengine.com',
