@@ -459,40 +459,38 @@ add_filter( 'wpseo_exclude_from_sitemap_by_post_ids', function( $excluded_posts_
 	return array_merge( $excluded_posts_ids, get_posts( $args ) );
 } );
 
-// Add custom fields to primary navigation menu
+// Number only urls
+add_filter( 'wp_unique_post_slug', 'mg_unique_post_slug', 10, 6 );
 
-function menu_item_desc( $item_id, $item ) {
-	$menu_item_desc = get_post_meta( $item_id, '_menu_item_desc', true );
-	?>
-	<div style="clear: both;">
-	    <span class="description"><?php _e( "Item Description", 'menu-item-desc' ); ?></span><br />
-	    <input type="hidden" class="nav-menu-id" value="<?php echo $item_id ;?>" />
-	    <div class="logged-input-holder">
-	        <input type="text" name="menu_item_desc[<?php echo $item_id ;?>]" id="menu-item-desc-<?php echo $item_id ;?>" value="<?php echo esc_attr( $menu_item_desc ); ?>" />
-	    </div>
-	</div>
-	<?php
-}
-add_action( 'wp_nav_menu_item_custom_fields', 'menu_item_desc', 10, 2 );
+/**
+ * Allow numeric slug
+ *
+ * @param string $slug          The slug returned by wp_unique_post_slug().
+ * @param int    $post_ID       The post ID that the slug belongs to.
+ * @param string $post_status   The status of post that the slug belongs to.
+ * @param string $post_type     The post_type of the post.
+ * @param int    $post_parent   Post parent ID.
+ * @param string $original_slug The requested slug, may or may not be unique.
+ */
+function mg_unique_post_slug( $slug, $post_ID, $post_status, $post_type, $post_parent, $original_slug ) {
+    global $wpdb;
 
-function save_menu_item_desc( $menu_id, $menu_item_db_id ) {
-	if ( isset( $_POST['menu_item_desc'][$menu_item_db_id]  ) ) {
-		$sanitized_data = sanitize_text_field( $_POST['menu_item_desc'][$menu_item_db_id] );
-		update_post_meta( $menu_item_db_id, '_menu_item_desc', $sanitized_data );
-	} else {
-		delete_post_meta( $menu_item_db_id, '_menu_item_desc' );
-	}
-}
-add_action( 'wp_update_nav_menu_item', 'save_menu_item_desc', 10, 2 );
+    // don't change non-numeric values
+    if ( ! is_numeric( $original_slug ) || $slug === $original_slug ) {
+        return $slug;
+    }
 
-// Enqueue Theme JS w React Dependency
-add_action( 'wp_enqueue_scripts', 'my_enqueue_theme_js' );
-function my_enqueue_theme_js() {
-  wp_enqueue_script(
-    'my-theme-frontend',
-    get_stylesheet_directory_uri() . '/build/index.js',
-    ['wp-element'],
-    time(), // Change this to null for production
-    true
-  );
+    // Was there any conflict or was a suffix added due to the preg_match() call in wp_unique_post_slug() ?
+    $post_name_check = $wpdb->get_var( $wpdb->prepare(
+        "SELECT post_name FROM $wpdb->posts WHERE post_name = %s AND post_type IN ( %s, 'attachment' ) AND ID != %d AND post_parent = %d LIMIT 1",
+        $original_slug, $post_type, $post_ID, $post_parent
+    ) );
+
+    // There really is a conflict due to an existing page so keep the modified slug
+    if ( $post_name_check ) {
+        return $slug;
+    }
+
+    // Return our numeric slug
+    return $original_slug;
 }

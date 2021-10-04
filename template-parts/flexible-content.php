@@ -11,6 +11,9 @@ if ( have_rows( 'content' ) ) :
             case 'html':
                 get_template_part( 'template-parts/flexible-modules/html' );
                 break;
+            case 'boxes':
+                get_template_part( 'template-parts/flexible-modules/boxes' );
+                break;
             case 'button':
                  get_template_part( 'template-parts/flexible-modules/button' );
                  break;    

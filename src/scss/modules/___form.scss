@@ -1,0 +1,93 @@
+.form-container {
+  background-color: $color-paleblue;
+  border-radius: toRem(16);
+  form {
+    padding: toRem(30);
+  }
+  @include desktop() {
+    max-width: toRem(650);
+  }
+}
+
+.required {
+  color: $color-red;
+}
+.booleancheckbox {
+  cursor: pointer;
+  label {
+    display: inline-flex;
+    align-items: flex-start;
+    font-size: $size-16px;
+    line-height: toRem(20);
+    min-height: toRem(40);
+    padding: 0;
+    cursor: pointer;
+  }
+  input {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip: rect(0, 0, 0, 0);
+    font-size: $size-16px;
+    appearance: none;
+    background-color: $color-lightgray;
+    color: #33475b;
+    line-height: 1.375;
+    border: toRem(1) solid;
+    border-color: $color-darkgray;
+    border-radius: toRem(3);
+    width: 100%;
+    min-height: toRem(32);
+    padding: toRem(9) toRem(10);
+  }
+  .check {
+    &:hover:before {
+      background-color: $color-lightgray;
+    }
+    &:before {
+      left: 0;
+      border: toRem(2) solid $color-darkgray;
+      width: toRem(16);
+      height: toRem(16);
+      border-radius: toRem(1);
+    }
+    &:before,
+    &:after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: toRem(3);
+    }
+    display: block;
+    position: relative;
+    padding: toRem(2) 0 toRem(2) toRem(27);
+  }
+}
+
+.mb-20px {
+  margin-bottom: toRem(20);
+}
+.mb-10px {
+  margin-bottom: toRem(10);
+}
+
+.mlr-5px {
+  margin-left: toRem(5);
+  margin-right: toRem(5);
+}
+.pl-20px {
+  padding-left: toRem(20);
+}
+
+.copyright {
+  font-size: toRem(14);
+}
+
+.paragraph {
+  padding: toRem(8);
+  line-height: 0 1.4em;
+}
+.error {
+  color: $color-red;
+}

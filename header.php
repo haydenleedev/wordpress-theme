@@ -8,8 +8,7 @@
 <!doctype html>
 <html class="no-js" <?php language_attributes(); ?> >
 <head class="">
-
-    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-WCZG2QZ"></script>
+	<script src="https://www.googleoptimize.com/optimize.js?id=OPT-WCZG2QZ"></script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -276,22 +275,14 @@ body_class( $blog_class ); ?>>
     ?>
     <header class="header">
         <div class="header__container">
-            
+            <div class="site-branding">
+                <a href="<?php echo bloginfo( 'url' ); ?>">
+                    <img class="header__logo" alt="ujet logo"
+                         src="<?php echo $staticLogo ?: get_stylesheet_directory_uri() . '/dist/images/ujet-logo.svg'; ?>" width="130" height="41">
+                </a>
+            </div>
+            <span class="menu_hamburger"></span>
             <nav role="presentation" aria-label="Main Navigation" class="header__menu" id="primary-nav">
-
-            <ul class="site-branding">
-                <li>
-                    <a href="<?php echo bloginfo( 'url' ); ?>">
-                        <img class="header__logo" alt="ujet logo"
-                            src="<?php echo $staticLogo ?: get_stylesheet_directory_uri() . '/dist/images/ujet-logo.svg'; ?>" width="130" height="41">
-                    </a>
-                </li>
-                <li class="mobile-menu">
-                    <a class="menu_hamburger">Toggle Mobile Menu</a>
-                </li>
-            </ul>
-            
-
                 <?php 
                 wp_nav_menu( array(
                     'theme_location' => 'top-bar-r',

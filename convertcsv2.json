@@ -1,0 +1,1277 @@
+[
+ {
+   "id": "A",
+   "title": "AI",
+   "desc": "Artificial Intelligence. A computer system that is able to perform tasks normally done by humans, including speech recognition, automated chat, translation, visual perception, and more."
+ },
+ {
+   "id": "A",
+   "title": "Automatic Contact Distributor (ACD)",
+   "desc": "is an automated switchboard that answers incoming calls and forwards them to the appropriate agent or department to resolve the caller’s issue."
+ },
+ {
+   "id": "A",
+   "title": "Active X controls",
+   "desc": "User-controllable features on a webpage."
+ },
+ {
+   "id": "A",
+   "title": "After-hours deflection",
+   "desc": "A feature that uses an automated message to deflect calls that come in after operating hours."
+ },
+ {
+   "id": "A",
+   "title": "Agent",
+   "desc": "A person who answers calls in a call center. Also called Customer Service Representative (CSR)."
+ },
+ {
+   "id": "A",
+   "title": "Agent Coaching",
+   "desc": "A quality management technique in which contact center managers provide agents with feedback on calls, examples of how to improve their skullset, and activities to complete for practice. "
+ },
+ {
+   "id": "A",
+   "title": "Agent Experience",
+   "desc": "A holistic measure of how effective, empowered, and efficient a contact center agent is. Agent Experience can be improved with coaching, skills training, and team optimization. "
+ },
+ {
+   "id": "A",
+   "title": "Agent Occupancy",
+   "desc": "A workforce management metric that measures the percentage of time agents are actively handling customer calls versus doing other activities like updating and closing tickets."
+ },
+ {
+   "id": "A",
+   "title": "Agent reports",
+   "desc": "A report that includes an agent’s individual call log as well as team performance numbers. "
+ },
+ {
+   "id": "A",
+   "title": "Agent Self-Evaluations",
+   "desc": "–A standardized self-assessment in which an agent scores their own customer interactions."
+ },
+ {
+   "id": "A",
+   "title": "Agent Utilization",
+   "desc": "A productivity metric that measures contact center productivity by evaluating the ratio between work completed to an agent’s work capacity."
+ },
+ {
+   "id": "A",
+   "title": "Automatic Number Identification (ANI)",
+   "desc": "or CallerID is a way to identify a caller by their phone number. "
+ },
+ {
+   "id": "A",
+   "title": "Analog",
+   "desc": "The process of transforming audio signals (like voice) into electronic pulses. "
+ },
+ {
+   "id": "A",
+   "title": "Application Programming Interface (API)",
+   "desc": "The functions and protocols that allow developers to create applications that access the data of an operating system or other service. "
+ },
+ {
+   "id": "A",
+   "title": "Application",
+   "desc": "The automated transaction (interactions) among the caller, the voice response system, and any databases or host computers required for your business."
+ },
+ {
+   "id": "A",
+   "title": "Automatic Speech Recognition (ASR)",
+   "desc": "Technology that allows humans and computers to interact using conversational syntax. This technology is used in features like chatbots. "
+ },
+ {
+   "id": "A",
+   "title": "Auto Dialer",
+   "desc": "A software system for outbound call centers  that automatically calls customer telephone numbers to deliver automated messages or to connect customers to live agents. "
+ },
+ {
+   "id": "A",
+   "title": "Automatic callback",
+   "desc": "A feature that allows callers to avoid waiting on hold for long periods of time and instead choose a time to receive a call back from a customer service agent."
+ },
+ {
+   "id": "A",
+   "title": "Automation",
+   "desc": "Technology that boosts efficiency by programming a computer or a customer to complete processes that an agent would normally handle. "
+ },
+ {
+   "id": "A",
+   "title": "Average Handling Time (AHT)",
+   "desc": "The amount of time an agent spends handling each customer call."
+ },
+ {
+   "id": "A",
+   "title": "Average Hold Time (AHLDT)",
+   "desc": "The average amount of time that a customer spends on hold waiting to be connecting to an agent."
+ },
+ {
+   "id": "B",
+   "title": "Back Office Optimization",
+   "desc": "Streamlining and aligning back office workforce functions in a call center to be consistent with front-office services to improve efficiency and the customer experience."
+ },
+ {
+   "id": "B",
+   "title": "Barge-in",
+   "desc": "Also referred to as “call barging,” a barge-in is a three-way calling feature that allows a contact center supervisor to listen in live on a call and interject if necessary."
+ },
+ {
+   "id": "B",
+   "title": "Blended Agent",
+   "desc": "A contact center agent who handles customer interactions across multiple channels, including voice, web, and chat, and others."
+ },
+ {
+   "id": "B",
+   "title": "Bot",
+   "desc": "Also sometimes called a Chatbot, a bot is an artificial intelligence (AI) software that automates parts of the customer journey to make call centers more efficient."
+ },
+ {
+   "id": "B",
+   "title": "Business Optimization",
+   "desc": "The process of measuring productivity, performance, and efficiency in a contact center to highlight areas of improvement."
+ },
+ {
+   "id": "B",
+   "title": "Business Process Outsourcing (BPO)",
+   "desc": "Outsourcing certain business functions to a third party."
+ },
+ {
+   "id": "B",
+   "title": "Business to Business (B2B)",
+   "desc": "Transactions that happen between two businesses, rather than a business and a customer."
+ },
+ {
+   "id": "B",
+   "title": "Business to Customer (B2C)",
+   "desc": "Transactions that happen between a business and a customer, rather than two businesses. "
+ },
+ {
+   "id": "B",
+   "title": "Byte",
+   "desc": "A unit of storage on a computer. Usually eight binary digits, a byte is used to represent a character of text."
+ },
+ {
+   "id": "C",
+   "title": "Call Abandonment",
+   "desc": "This refers to when a customer ends the call prior to being connected to an agent or before their issue is resolved.  "
+ },
+ {
+   "id": "C",
+   "title": "Call Center Agent Scorecard",
+   "desc": "A quality assurance (QA) tool that measures the performance of an individual agent."
+ },
+ {
+   "id": "C",
+   "title": "Call Center Agent Software",
+   "desc": "Also called the “agent desktop” or “agent workspace,” a unified portal for call center agents to handle customer interactions and resolve tickets. "
+ },
+ {
+   "id": "C",
+   "title": "Call Center Coaching",
+   "desc": "See “Agent Coaching”"
+ },
+ {
+   "id": "C",
+   "title": "Call Center Reporting",
+   "desc": "Tracking the performance of agents in a call center against Key Performance Indicators (KPIs) and goal metrics to improve the skill set of a workforce. "
+ },
+ {
+   "id": "C",
+   "title": "Call Center Service Level",
+   "desc": "A quality indicator measuring how well customer experience standards are met. "
+ },
+ {
+   "id": "C",
+   "title": "Call Center Software",
+   "desc": "A unified portal or a collection of applications that automate contact center operations. "
+ },
+ {
+   "id": "C",
+   "title": "Call Recorder",
+   "desc": "Contact center technology that records live calls and agent screens for quality assurance and coaching."
+ },
+ {
+   "id": "C",
+   "title": "Cascade Groups",
+   "desc": "See “Call Center Software”"
+ },
+ {
+   "id": "C",
+   "title": "Contact Center Software",
+   "desc": "The average amount of money a company spends acquiring a new customer. "
+ },
+ {
+   "id": "C",
+   "title": "Customer Acquisition Cost (CAC)",
+   "desc": "Feedback a consumer gives to a company that they bought a product or service from. This may include filling out a survey, leaving a review, or calling in with a complaint. "
+ },
+ {
+   "id": "C",
+   "title": "Customer Feedback",
+   "desc": "Negative sentiment a customer has as a result of a poor experience with a company."
+ },
+ {
+   "id": "C",
+   "title": "Customer Frustration",
+   "desc": "The process of collecting and analyzing information about a business’s customers that helps identify the best way to interact with customers and improve the customer experience."
+ },
+ {
+   "id": "C",
+   "title": "Customer Intelligence",
+   "desc": "A software that reviews and assesses transcripts and voice recordings from channels like voice, email, and chat."
+ },
+ {
+   "id": "C",
+   "title": "Customer Interaction Analytics",
+   "desc": "A tool used to collect customer feedback after a sale or customer interaction."
+ },
+ {
+   "id": "C",
+   "title": "Customer Surveys –",
+   "desc": "The different ways a customer interacts with a business, which may include voice and digital channels, email, and chat."
+ },
+ {
+   "id": "C",
+   "title": "Channels",
+   "desc": "An operation that supports inbound and outbound communication between customers and a business, usually for sales, customer service, or technical support."
+ },
+ {
+   "id": "C",
+   "title": "Call Center (Contact Center)",
+   "desc": "A disposition is a status that is assigned to an interaction after completion by either the agent or the operating system. "
+ },
+ {
+   "id": "C",
+   "title": "Contact Disposition",
+   "desc": "The customer or party that an agent interacts with on a call. "
+ },
+ {
+   "id": "C",
+   "title": "Caller",
+   "desc": "The act of recording a call for quality control and training in compliance with local laws and regulations."
+ },
+ {
+   "id": "C",
+   "title": "Call Recording",
+   "desc": "The length of time it takes to complete a call."
+ },
+ {
+   "id": "C",
+   "title": "Call Time",
+   "desc": "The number of calls received or made during a specific period."
+ },
+ {
+   "id": "C",
+   "title": "Call Volume",
+   "desc": "(Call Center Customer Relationship Management)Also called “Contact Center CRM,” call center CRM is technology that provides agents with information about a customer to personalize their experience."
+ },
+ {
+   "id": "C",
+   "title": "Call Center CRM",
+   "desc": "The tools, technologies, and procedures used to manage a contact center."
+ },
+ {
+   "id": "C",
+   "title": "Call Center Management",
+   "desc": "The process of forecasting staffing needs based on anticipated call volume and other business needs. "
+ },
+ {
+   "id": "C",
+   "title": "Call Center Workforce Planning",
+   "desc": "A cloud-based contact center platform offered on a subscription basis. "
+ },
+ {
+   "id": "C",
+   "title": "CCaaS 1.0 (Contact Center as a Service)",
+   "desc": "Purpose-built specifically for the contact centers, CCaaS 2.0 integrates Omnichannel, WFO, Analytics and AI into one."
+ },
+ {
+   "id": "C",
+   "title": "CCaaS 2.0",
+   "desc": "Go beyond omnichannel with predictive, contextual, and conversational CX built for the smartphone era and powered by UJET."
+ },
+ {
+   "id": "C",
+   "title": "CCaaS 3.0",
+   "desc": "A customer service representative or call center agent who handles inbound and outbound calls. "
+ },
+ {
+   "id": "C",
+   "title": "Contact Center Agent",
+   "desc": "The facility that houses the telecommunications network for a contact center."
+ },
+ {
+   "id": "C",
+   "title": "Central Office",
+   "desc": "–A messaging app built into a business’s website that helps customers access customer service quickly and easily. Chat may be monitored by"
+ },
+ {
+   "id": "C",
+   "title": "Chat",
+   "desc": "(See also: Bot) An AI function that improves the efficiency of contact centers by routing customer inquiries on voice and digital channels. "
+ },
+ {
+   "id": "C",
+   "title": "Chatbot",
+   "desc": "A UJET feature that reduces effort and errors associated with manual dialing."
+ },
+ {
+   "id": "C",
+   "title": "Click-to-dial Outbound",
+   "desc": "see “CCaSS (Contact Center as a Service)” "
+ },
+ {
+   "id": "C",
+   "title": "Cloud Call Center",
+   "desc": "A technology that allows an agent and a customer to share screens and navigate the same browser during a call. "
+ },
+ {
+   "id": "C",
+   "title": "Co-browse",
+   "desc": "Adhering to the rules, regulations, and laws of a particular industry or location."
+ },
+ {
+   "id": "C",
+   "title": "Compliance",
+   "desc": "Identifying information about a customer that helps companies personalize the customer experience. This may include user identity, past purchases, previous contact center interactions, and demographic information."
+ },
+ {
+   "id": "C",
+   "title": "Context",
+   "desc": "A system that consolidates contacts into one desktop interface for easier navigation and management."
+ },
+ {
+   "id": "C",
+   "title": "Container User Interface",
+   "desc": "When an agent or sales rep suggests a customer purchase an additional product or service."
+ },
+ {
+   "id": "C",
+   "title": "Cross-sell",
+   "desc": "A metric calculated through customer satisfaction surveys that is used to measure how well a company meets its customers’ service expectations."
+ },
+ {
+   "id": "C",
+   "title": "Customer Satisfaction (CSAT)",
+   "desc": "See: Call Center Management"
+ },
+ {
+   "id": "C",
+   "title": "Contact Center Management",
+   "desc": "The set of strategies used to improve the omnichannel customer experience through contact center optimization."
+ },
+ {
+   "id": "C",
+   "title": "Contact Center Workforce Optimization (WFO)",
+   "desc": "UJET leverages data from your CRM to prioritize routing decisions."
+ },
+ {
+   "id": "C",
+   "title": "Contextual Routing",
+   "desc": "Monitoring and controlling a phone system through a computer. This may be done via an in-house server or on the cloud."
+ },
+ {
+   "id": "C",
+   "title": "Computer Telephony Integration (CTI)",
+   "desc": "See “Call Center CRM”"
+ },
+ {
+   "id": "C",
+   "title": "CRM (Customer Relationship Management)",
+   "desc": "A computer application that monitors telephone calls. CT Connect is often used in contact centers."
+ },
+ {
+   "id": "C",
+   "title": "CT Connect",
+   "desc": "The hardware and software that supports Computer Telephony Integration (CTI)."
+ },
+ {
+   "id": "C",
+   "title": "CTI Server",
+   "desc": "A metric used to measure how much effort a customer must expend to resolve an issue or purchase a product. Generally, the lower the score, the better."
+ },
+ {
+   "id": "C",
+   "title": "Customer Effort Score (CES)",
+   "desc": "The system of strategies used to engage with customers across the customer lifecycle."
+ },
+ {
+   "id": "C",
+   "title": "Customer Engagement",
+   "desc": "The experience a customer has when interacting with your company throughout the customer lifecycle."
+ },
+ {
+   "id": "C",
+   "title": "Customer Experience (CX)",
+   "desc": "A strategy used to improve and optimize customer experience and engagement."
+ },
+ {
+   "id": "C",
+   "title": "Customer Experience Management (CEM)",
+   "desc": "The software and systems used to manage the customer experience."
+ },
+ {
+   "id": "C",
+   "title": "Customer Experience Platform",
+   "desc": "Also known as the “customer lifecycle,” the customer journey refers to the entire experience a customer has with a company from the first touchpoint to the last."
+ },
+ {
+   "id": "C",
+   "title": "Customer Journey",
+   "desc": "The strategies and software used to provide excellent omnichannel customer experience throughout the customer journey. "
+ },
+ {
+   "id": "C",
+   "title": "Customer Journey Management",
+   "desc": "A visual representation of the touchpoints a customer has with your organization over time."
+ },
+ {
+   "id": "C",
+   "title": "Customer Journey Map",
+   "desc": "The process of improving the customer experience over the entire journey."
+ },
+ {
+   "id": "C",
+   "title": "Customer Journey Optimization",
+   "desc": "The total amount of money that a customer is worth to an organization over their lifetime."
+ },
+ {
+   "id": "C",
+   "title": "Customer Lifetime Value (CLV)",
+   "desc": "The support and attention provided to a customer before, during, and after their purchase experience."
+ },
+ {
+   "id": "C",
+   "title": "Customer Service",
+   "desc": "An agent who provides customer support."
+ },
+ {
+   "id": "C",
+   "title": "Customer Service Representative (CSR)",
+   "desc": ""
+ },
+ {
+   "id": "D",
+   "title": "Dashboard",
+   "desc": "A computer display of real-time information about a caller, KPI reporting, contact center communication, and other information for easy viewing by agents in a call center."
+ },
+ {
+   "id": "D",
+   "title": "Database",
+   "desc": "An app that stores and organizes information for easy retrieval and analysis. "
+ },
+ {
+   "id": "D",
+   "title": "Decibel (dB)",
+   "desc": "A unit that measures the intensity of a sound."
+ },
+ {
+   "id": "D",
+   "title": "Deltacast Routing",
+   "desc": "Deltacast routing logic focuses on optimizing for chat concurrency and distributing workload equally between agents."
+ },
+ {
+   "id": "D",
+   "title": "Dialer",
+   "desc": "An automated system that dials phone numbers for outbound mass communication."
+ },
+ {
+   "id": "D",
+   "title": "Digital Call Center",
+   "desc": "A contact center that supports omnichannel digital communications, including email, chat, SMS, social media, and others."
+ },
+ {
+   "id": "D",
+   "title": "Direct Access Point",
+   "desc": "Intelligent routing based on user data or where they are on your website or in your app."
+ },
+ {
+   "id": "D",
+   "title": "Direct Inward Dialing (DID)",
+   "desc": "Calling within a company without going through the operator."
+ },
+ {
+   "id": "D",
+   "title": "Directed Dialog",
+   "desc": "A speech automation system that prompts callers to answer a set of questions in order to route the call to the appropriate party or department. "
+ },
+ {
+   "id": "D",
+   "title": "Dial Pulse Recognition (DPR)",
+   "desc": "A system that recognizes dial pulse inputs from callers."
+ },
+ {
+   "id": "D",
+   "title": "Dialed Number Identification Service (DNIS)",
+   "desc": "A set of numbers that identifies the phone number that the caller reached."
+ },
+ {
+   "id": "D",
+   "title": "Dual Tone Multi Frequency (DTMF)",
+   "desc": "A system of audio tones that represent numbers on a keypad."
+ },
+ {
+   "id": "E",
+   "title": "Echo cancellation",
+   "desc": "A technology that removes noise interference from a call so the system can recognize natural language inputs when the caller is prompted."
+ },
+ {
+   "id": "E",
+   "title": "Embeddable Voice, SMS &amp; Chat",
+   "desc": "A UJET feature that lowers telephony costs while keeping the conversation and the customer journey, in the app, regardless of channel."
+ },
+ {
+   "id": "E",
+   "title": "Email Channel Steering",
+   "desc": "A component of the UJET web SDK which provides a web-based form to initiate an email that gets routed to an email address or a specific queue."
+ },
+ {
+   "id": "E",
+   "title": "Employee engagement",
+   "desc": "A measurement of how invested employees are in their work of supporting customers. Employee engagement affects retention, performance, customer experience, and ultimately, the success of the business."
+ },
+ {
+   "id": "E",
+   "title": "Enterprise Data Window",
+   "desc": "Centralized data that is shared by users throughout an organization."
+ },
+ {
+   "id": "E",
+   "title": "Enterprise Relationship Management (ERM)",
+   "desc": "The systems that allow an organization to share customer, product, competitor, and market information to better meet customer needs."
+ },
+ {
+   "id": "E",
+   "title": "Escalation",
+   "desc": "Transferring an agitated customer to a supervisor for resolution."
+ },
+ {
+   "id": "F",
+   "title": "First Call Resolution",
+   "desc": "Also called “First Contact Resolution.” A measurement of the contact center’s ability to resolve a customer issue the first time they call in, thereby increasing customer satisfaction."
+ },
+ {
+   "id": "F",
+   "title": "First Contact Resolution",
+   "desc": "See “First Call Resolution.”"
+ },
+ {
+   "id": "F",
+   "title": "Forecasting",
+   "desc": "A workforce management application used to predict the number of agents needed to handle an estimated workload."
+ },
+ {
+   "id": "G",
+   "title": "Gamification",
+   "desc": "Rewarding agents and teams for staying on task by allowing them to earn points, collect badges, climb the leaderboard, or win recognition."
+ },
+ {
+   "id": "G",
+   "title": "Grammar",
+   "desc": "The list of possible spoken responses a caller can use to identify their issue to an AI call router."
+ },
+ {
+   "id": "G",
+   "title": "GrXML",
+   "desc": "XML format of a syntax that represents grammars used in speech recognition so developers can specify keywords or phrases that a speech recognizer should listen for."
+ },
+ {
+   "id": "G",
+   "title": "Graphical user interface (GUI)",
+   "desc": "A program that enables on-screen navigation through menus, icons, and other visual elements."
+ },
+ {
+   "id": "H",
+   "title": "Hardware",
+   "desc": "The physical components of a computer system or network, including monitors, disks, tapes, central processing units, and more."
+ },
+ {
+   "id": "H",
+   "title": "Hold Time",
+   "desc": "The amount of time a caller spends waiting to be connected to an agent."
+ },
+ {
+   "id": "H",
+   "title": "Hosted Call Center",
+   "desc": "A customer experience solution where a company’s central inbound and outbound call center is hosted on a service provider’s back-office network and delivered via the cloud."
+ },
+ {
+   "id": "H",
+   "title": "Hosted Contact Center",
+   "desc": "See “Hosted Call Center”"
+ },
+ {
+   "id": "H",
+   "title": "Hosted Dialer",
+   "desc": "A contact center cloud-based system that predicts agent availability, filters out unproductive calls, and maximizes an agent’s time spent on the phone."
+ },
+ {
+   "id": "I",
+   "title": "Integrated Browser",
+   "desc": "An administrator-controlled system that gives agents easy access to frequently used sites on the internet or company intranet."
+ },
+ {
+   "id": "I",
+   "title": "Intraday Management",
+   "desc": "A workforce management system that monitors the day’s current call volume and trends so managers can make changes if needed."
+ },
+ {
+   "id": "I",
+   "title": "Intraday forecasting",
+   "desc": "A workforce management tool that allows managers to reevaluate staffing based on the day’s current call volume and needs."
+ },
+ {
+   "id": "I",
+   "title": "Interaction",
+   "desc": "A touchpoint between a customer and the company via their channel of choice or a combination of channels."
+ },
+ {
+   "id": "I",
+   "title": "IVR System",
+   "desc": "An automated interface that greets and routes callers at the beginning of an interaction."
+ },
+ {
+   "id": "I",
+   "title": "In-app chat",
+   "desc": "A component of the UJET Chat channel and enabled through the UJET mobile SDK, allows customers and agents to communicate through a mobile-based messaging experience originating from within a company’s mobile app."
+ },
+ {
+   "id": "I",
+   "title": "Inbound Call Center (Inbound contact center)",
+   "desc": "A contact center that handles a large number of incoming calls. Inbound contact centers typically handle customer service, billing, or technical support inquiries."
+ },
+ {
+   "id": "I",
+   "title": "Independent Software Vendor (ISV)",
+   "desc": "An organization that creates and distributes software that is compatible with another organization’s hardware."
+ },
+ {
+   "id": "I",
+   "title": "Integrated Services Digital Network (ISDN)",
+   "desc": "A set of systems that enable video, digital voice, and data transmission over a telephone network."
+ },
+ {
+   "id": "I",
+   "title": "Interactive Voice Response (IVR)",
+   "desc": "A call-processing option that responds to human speech or to digits entered by the caller. IVR is typically used to route calls in a queue, leave a message, or make a payment. "
+ },
+ {
+   "id": "J",
+   "title": "Journey Mapping",
+   "desc": "See: Customer Journey Map"
+ },
+ {
+   "id": "J",
+   "title": "Journey-specific",
+   "desc": "A specific experience designed to match the phase a customer is experiencing in their journey with your company."
+ },
+ {
+   "id": "k",
+   "title": "Keystroke macros",
+   "desc": "A system that defines a workflow by monitoring an agent’s keystrokes."
+ },
+ {
+   "id": "k",
+   "title": "Key performance indicators (KPIs)",
+   "desc": "A unit of measurement that tracks the progress of a team or individual toward previously set performance goals."
+ },
+ {
+   "id": "L",
+   "title": "Leaderboard",
+   "desc": "A centralized monitor that shows agents their progress toward team goals compared to that of their colleagues."
+ },
+ {
+   "id": "L",
+   "title": "Lifetime Customer Value (LCV)",
+   "desc": "A method of interfacing a system to a switch or PBX using E1-related software and hardware."
+ },
+ {
+   "id": "L",
+   "title": "Line side E1",
+   "desc": "A method of interfacing a system to a switch or PBX using T1-related software and hardware."
+ },
+ {
+   "id": "L",
+   "title": "Line side T1",
+   "desc": "A point in the customer journey where feedback is collected."
+ },
+ {
+   "id": "L",
+   "title": "Listening Post",
+   "desc": "A communication network in a limited geographical area."
+ },
+ {
+   "id": "L",
+   "title": "Local Area Network (LAN) –",
+   "desc": "A record of past customer interactions."
+ },
+ {
+   "id": "L",
+   "title": "Logs",
+   "desc": "Also called “log files,” logs are records of activity on a computer system that usually include the event and the time stamp. Examples of logs may include a list of websites visited or a detailed list of calls made."
+ },
+ {
+   "id": "M",
+   "title": "Macro metric",
+   "desc": "The primary metrics that contact centers use to measure the health of their customer experience. An example of a macro metric is Net Promoter Score (NPS). "
+ },
+ {
+   "id": "M",
+   "title": "Marquee message",
+   "desc": "A message broadcast to all agents in a contact center by a supervisor. Marquee messages can be used for reminders, announcements, product releases, and more."
+ },
+ {
+   "id": "M",
+   "title": "Megabyte",
+   "desc": "A unit of measurement that equals 1,048,576 bytes."
+ },
+ {
+   "id": "M",
+   "title": "Menu",
+   "desc": "A set of navigation options presented to a user on a website or an app to help them find what they are looking for."
+ },
+ {
+   "id": "M",
+   "title": "Mobile Voice",
+   "desc": "Also called voice control or voice access, mobile voice is a technology that allows users to control a mobile device by a spoken command. An example of this is Siri on the iPhone."
+ },
+ {
+   "id": "M",
+   "title": "Mobile SDK",
+   "desc": "Complete developer toolkits to deploy widgets and orchestrate the customer journeycompatible with iOS and Android."
+ },
+ {
+   "id": "M",
+   "title": "Multichannel cloud call center",
+   "desc": "A call center that integrates multiple touch pointsincluding voice, text, social media, and chatthat runs on cloud-native software, rather than on-premise hardware. UJET is a multichannel cloud contact center platform.  "
+ },
+ {
+   "id": "M",
+   "title": "Multicast Routing",
+   "desc": "A UJET feature that offers sessions to all agents who are assigned to the queue when an interaction comes in. All agents have an equal opportunity to answer, and the quickest to respond will receive the interaction."
+ },
+ {
+   "id": "M",
+   "title": "Multichannel cloud contact center",
+   "desc": "See “Multichannel cloud call center”"
+ },
+ {
+   "id": "N",
+   "title": "Natural language processing",
+   "desc": "A technology that turns text or speech into coded information in a computer."
+ },
+ {
+   "id": "N",
+   "title": "Natural language speech recognition (NLSR)",
+   "desc": "An advanced type of speech recognition that works best with an external or “proxy” server, NLSR can not only recognize particular words and phrases, but also assign meanings to them. NLSR is also capable of recognizing numbers and currency amounts."
+ },
+ {
+   "id": "N",
+   "title": "Natural language understanding (NLU)",
+   "desc": "The ability for a computer or software to understand informal spoken expressions."
+ },
+ {
+   "id": "N",
+   "title": "Network Strength Indicator",
+   "desc": "How likely a customer is to recommend you to their friends and family on a scale of 1-10. NPS is one of the most common ways companies track loyalty and customer church. A “promoter” indicates a score of 9-10, “passive” customers indicate a score of 7-8, and a “detractor” indicates a score of 1-6."
+ },
+ {
+   "id": "N",
+   "title": "Net Promoter Score (NPS)",
+   "desc": "See “Voice Platform”"
+ },
+ {
+   "id": "N",
+   "title": "Nuance Voice Platform (NVP)",
+   "desc": ""
+ },
+ {
+   "id": "O",
+   "title": "Omnichannel cloud contact center",
+   "desc": "A call center that uses cloud-native software (instead of in-house hardware) to handle in-bound and outbound calls across multiple, integrated communication channels, including voice, chat, email, text, and more. "
+ },
+ {
+   "id": "O",
+   "title": "Omnichannel cloud call center",
+   "desc": "See “Omnichannel cloud contact center”"
+ },
+ {
+   "id": "O",
+   "title": "Omnichannel customer experience",
+   "desc": "A personalized customer experience where individual interactions seamlessly integrate across channels to create one holistic experience."
+ },
+ {
+   "id": "O",
+   "title": "Omnichannel customer journey",
+   "desc": "A series of key customer interactions on multiple channels over the time a customer becomes a prospect through the time they convert into a paying customer. "
+ },
+ {
+   "id": "O",
+   "title": "Omnichannel customer service",
+   "desc": "The interactions between a customer or prospect and the company across multiple channels at the time of the sale and over the customer journey."
+ },
+ {
+   "id": "O",
+   "title": "Omnichannel routing",
+   "desc": "A call center management system that proactively routes inbound and outbound contacts across multiple channels using apps like ACD, IVR, and AI chatbots."
+ },
+ {
+   "id": "O",
+   "title": "Outbound call center",
+   "desc": "A contact center that makes a large number of outbound calls for sales, fundraising, public safety communication, campaigns, and more."
+ },
+ {
+   "id": "O",
+   "title": "Outbound IVR",
+   "desc": "IVR technology that contact senders can use to send proactive and personalized outbound messages to contacts."
+ },
+ {
+   "id": "O",
+   "title": "Over Capacity Deflection",
+   "desc": "A UJET feature that deflects interactions using an automated message when a call is placed in a queue and not answered in a predefined amount of time."
+ },
+ {
+   "id": "P",
+   "title": "Performance Management System",
+   "desc": "A Performance management system used by contact centers to report on historical, transactional, and real-time employee performance data."
+ },
+ {
+   "id": "P",
+   "title": "Phoneme",
+   "desc": "Units of sound that distinguish one word from another word in a language. "
+ },
+ {
+   "id": "P",
+   "title": "Phrase",
+   "desc": "A set of one or more words assigned to a particular meaning in an application. Phrases are often associated with directed dialog in IVR call center systems and are used to route calls using an automated menu."
+ },
+ {
+   "id": "P",
+   "title": "Port",
+   "desc": "A connection point that facilitates the transfer of information between two devices or between a computer and a server over a network."
+ },
+ {
+   "id": "P",
+   "title": "Predictive Dialer",
+   "desc": "A app used in a call center to make a large number of outbound calls at a time and connect them with live agents."
+ },
+ {
+   "id": "P",
+   "title": "Private Branch Exchange (BBX)",
+   "desc": "A private telephone network used by a company to make and receive external and internal calls. "
+ },
+ {
+   "id": "P",
+   "title": "Processor",
+   "desc": "The part of a computer system that processes data. Also referred to as the “central processing unit.”"
+ },
+ {
+   "id": "P",
+   "title": "Proactive Triggers",
+   "desc": "A UJET Smart Actions feature that determines the ideal time to proactively present consumers with a chat or calling bubble."
+ },
+ {
+   "id": "P",
+   "title": "Prompt",
+   "desc": "A menu of options played to a caller to elicit responses and appropriately route their call."
+ },
+ {
+   "id": "P",
+   "title": "Proxy Server",
+   "desc": "An external server used to perform processor-intensive tasks, like Natural Language Speech recognition."
+ },
+ {
+   "id": "P",
+   "title": "Public Switched Telephone Network (PSTN)",
+   "desc": "A public telephone network that connects telephones to ACDs and PBXs."
+ },
+ {
+   "id": "Q",
+   "title": "Quality Plans",
+   "desc": "A quality assurance tool that samples agent-customer interactions and sends them to an evaluator for review."
+ },
+ {
+   "id": "Q",
+   "title": "Quality Evaluation",
+   "desc": "A quality assurance process in which a supervisor scores an agent based on their performance in customer interactions."
+ },
+ {
+   "id": "Q",
+   "title": "Quality Management",
+   "desc": "The processes and strategies used to ensure a positive customer experience. Quality management is often associated with workforce management."
+ },
+ {
+   "id": "Q",
+   "title": "Quality Management Dispute",
+   "desc": "A process that allows an agent to disagree with the performance score they’ve been assigned and to share why they disagree with the manager’s assessment."
+ },
+ {
+   "id": "Q",
+   "title": "Quality Management form",
+   "desc": "A set of questions and criteria used to evaluate an agent’s customer interactions."
+ },
+ {
+   "id": "Q",
+   "title": "Quality Management Calibration",
+   "desc": "The process of ensuring that all of the evaluators in a performance review cycle are reviewing agents in a consistent manner."
+ },
+ {
+   "id": "Q",
+   "title": "Queue",
+   "desc": "A virtual line where a customer waits to be connected to an agent. Queues are often managed by chatbots and AI."
+ },
+ {
+   "id": "R",
+   "title": "Real-time adherence (RTA)",
+   "desc": "A workforce management metric that helps supervisors identify agents that are not adhering to their set schedule."
+ },
+ {
+   "id": "R",
+   "title": "Recognizer",
+   "desc": "A telephone system that compares keywords or phrases a caller inputs to system grammar to correctly route the call."
+ },
+ {
+   "id": "R",
+   "title": "Reports agent",
+   "desc": "A report that allows an agent to see their call log along with team statistics."
+ },
+ {
+   "id": "R",
+   "title": "Return on Investment (ROI)",
+   "desc": "The amount of money recouped on an investment."
+ },
+ {
+   "id": "S",
+   "title": "SAML",
+   "desc": "Security Assertion Markup Language (SAML) is an open standard for exchanging authentication between an identity provider and a service provider."
+ },
+ {
+   "id": "S",
+   "title": "Secure Payments",
+   "desc": "Payments that are processed through a PCI-compliant payment IVR."
+ },
+ {
+   "id": "S",
+   "title": "Self-service rate",
+   "desc": "The rate at which customers resolve their own issues via online tools rather than speaking with an agent."
+ },
+ {
+   "id": "S",
+   "title": "Speech analytics",
+   "desc": "An AI technology that understands, processes, and analyzes human speech."
+ },
+ {
+   "id": "S",
+   "title": "Silent Monitoring",
+   "desc": "The ability for Supervisors to silently listen in and monitor agent calls and chats."
+ },
+ {
+   "id": "S",
+   "title": "Software as a Service (Saas)",
+   "desc": "A vendor who provides software based in the cloud and generally available on a subscription basis."
+ },
+ {
+   "id": "S",
+   "title": "Scheduling",
+   "desc": "The process of planning when agents will be available to handle calls in a contact center."
+ },
+ {
+   "id": "S",
+   "title": "Scheduled Callbacks",
+   "desc": "An AI technology that allows callers to determine the ideal time for an agent to call them back without waiting on hold."
+ },
+ {
+   "id": "S",
+   "title": "Screen Pop",
+   "desc": "Customer information that automatically pops onto an agent’s dashboard that tells them details about the caller, past purchases, previously reported issues, and resolved tickets."
+ },
+ {
+   "id": "S",
+   "title": "Sentiment Analysis",
+   "desc": "An AI tool that picks up on the customer’s attitude or feeling about the company during an interaction."
+ },
+ {
+   "id": "S",
+   "title": "Server",
+   "desc": "The computer or network that manages access to a network."
+ },
+ {
+   "id": "S",
+   "title": "Shrinkage",
+   "desc": "A workforce management metric that measures time that agents are being paid but are not handling customer interactions."
+ },
+ {
+   "id": "S",
+   "title": "Single Sign-on",
+   "desc": "A 3rd party identity management system using SAML 2.0."
+ },
+ {
+   "id": "S",
+   "title": "SLA (Service Level Agreement)",
+   "desc": "The set of internally-determined standards that a company uses to guide decisions."
+ },
+ {
+   "id": "S",
+   "title": "SMB",
+   "desc": "Small-to-medium business."
+ },
+ {
+   "id": "S",
+   "title": "SME",
+   "desc": "Small-to-Medium enterprise."
+ },
+ {
+   "id": "S",
+   "title": "SMS",
+   "desc": "Also known as texting, SMS  is one of the fastest-growing contact channels."
+ },
+ {
+   "id": "S",
+   "title": "SMS Blending",
+   "desc": "Blend voice and SMS channels to make hold times productive by gathering contextual data and setting up the call while customers wait."
+ },
+ {
+   "id": "S",
+   "title": "SNMP",
+   "desc": "Simple network management protocol."
+ },
+ {
+   "id": "S",
+   "title": "Small computer system interface (SCSI)",
+   "desc": "An adapter circuit card that can be plugged into a computer to control up to seven disks, drives, etc."
+ },
+ {
+   "id": "S",
+   "title": "SmartActions",
+   "desc": "A UJET technology that allows an agent to communicate visually and contextually with callers. Smart Actions help agents resolve calls faster by allowing them to verify customers using fingerprint and facial recognition, send and receive images and videos, receive text inputs, request secure payments, and more."
+ },
+ {
+   "id": "S",
+   "title": "Softphone",
+   "desc": "A tool that allows an agent to control a call from their desktop. "
+ },
+ {
+   "id": "S",
+   "title": "Speech energy",
+   "desc": "The sound level in a spoken audio signal."
+ },
+ {
+   "id": "S",
+   "title": "Structured query language (SQL)",
+   "desc": "A programming language that is used to store data and query applications."
+ },
+ {
+   "id": "S",
+   "title": "Supervisor",
+   "desc": "The manager responsible for leading the call center and training agents."
+ },
+ {
+   "id": "S",
+   "title": "Switch",
+   "desc": "A system that controls and directs call and data traffic. A switch that is customer-based is called a private branch exchange."
+ },
+ {
+   "id": "S",
+   "title": "System Administrator",
+   "desc": "The IT person responsible for installing, maintaining, and troubleshooting the software and hardware in a computer network."
+ },
+ {
+   "id": "S",
+   "title": "Schedule Adherence",
+   "desc": "See “Real-time Adherence” "
+ },
+ {
+   "id": "S",
+   "title": "Screen Recording",
+   "desc": "A quality assurance tool to capture an agent’s screen while they are on customer calls."
+ },
+ {
+   "id": "T",
+   "title": "T1",
+   "desc": "A digital transmission link that has a capacity of 1.544 Mbps."
+ },
+ {
+   "id": "T",
+   "title": "Talk time",
+   "desc": "The average amount of time that an agent spends on each call. In general, the faster an agent can successfully resolve an issue, the better."
+ },
+ {
+   "id": "T",
+   "title": "Task buttons",
+   "desc": "Buttons that allow an agent to launch an application, initiate after-call tasks, update CRM data, and more."
+ },
+ {
+   "id": "T",
+   "title": "TCP/IP",
+   "desc": "Transmission control protocol/internet protocol."
+ },
+ {
+   "id": "T",
+   "title": "Telephone Network",
+   "desc": "A telecommunications network that connects calls between two or more parties, as well as other channels."
+ },
+ {
+   "id": "T",
+   "title": "Touchpoint",
+   "desc": "Each connection point a customer has with a company that make up the entire customer experience."
+ },
+ {
+   "id": "T",
+   "title": "Trunk",
+   "desc": "A communication line or link, such as a wire or optical line that carries multiple signals at the same time. Trunks connect the network access between two points."
+ },
+ {
+   "id": "T",
+   "title": "Text-to-speech (TTS)",
+   "desc": "A feature that converts text to synthesized speech."
+ },
+ {
+   "id": "U",
+   "title": "UCaaS (Unified Communications as a Service)",
+   "desc": "A single unified cloud-based platform that provides all of a business’s communication needs on a subscription basis. "
+ },
+ {
+   "id": "U",
+   "title": "Upsell",
+   "desc": "When an agent sells a customer on a product that is of higher value than the originally planned purchase."
+ },
+ {
+   "id": "U",
+   "title": "Utterance",
+   "desc": "A unit of spoken language."
+ },
+ {
+   "id": "V",
+   "title": "Virtual Agent",
+   "desc": "An AI-powered conversational CX agent for 24/7 self-service"
+ },
+ {
+   "id": "V",
+   "title": "Virtual Contact Center",
+   "desc": "A call center operation made up of multiple agents working remotely."
+ },
+ {
+   "id": "V",
+   "title": "Virtual Call Center",
+   "desc": "See “Virtual Contact Center.”"
+ },
+ {
+   "id": "V",
+   "title": "Virtual Currency",
+   "desc": "Coins or tokens in a contact center gamification strategy used to reward agents for high performance."
+ },
+ {
+   "id": "V",
+   "title": "Virtual Marketplace",
+   "desc": "A virtual store where agents may redeem the virtual currency they’ve earned through high performance."
+ },
+ {
+   "id": "V",
+   "title": "Virtual Response Unit (VRU)",
+   "desc": "A software that uses inputs on a touch tone telephone to gather information and read it back to the caller."
+ },
+ {
+   "id": "V",
+   "title": "Visual IVR",
+   "desc": "A component of the mobile SDK, customers can navigate the menu structure using visual and touch navigation on their smartphone."
+ },
+ {
+   "id": "V",
+   "title": "Vocabulary",
+   "desc": "A set of words that an AI system recognizes using Natural Language Speech Recognition."
+ },
+ {
+   "id": "V",
+   "title": "Voice Authentication",
+   "desc": "A biometric verification tool that identifies a caller based on their voice."
+ },
+ {
+   "id": "V",
+   "title": "Voice of the Customer (VoC)",
+   "desc": "A set of insights based on customer preferences, satisfaction, priorities, and more. "
+ },
+ {
+   "id": "V",
+   "title": "Voice (in-app)",
+   "desc": "A feature that allows a user to initiate a voice call to the contact center within the app."
+ },
+ {
+   "id": "V",
+   "title": "Voice Platform",
+   "desc": "A platform that connects a voice application to a telephony system used in a contact center."
+ },
+ {
+   "id": "V",
+   "title": "Voiceprint",
+   "desc": "The unique sound spectrogram that identifies a caller in voice authentication technology."
+ },
+ {
+   "id": "V",
+   "title": "Voice Response Unit",
+   "desc": "A predecessor to IVR. "
+ },
+ {
+   "id": "V",
+   "title": "Voice User Interface",
+   "desc": "An AI interface that allows a caller to interact with a voice application through spoken words and phrases. "
+ },
+ {
+   "id": "V",
+   "title": "Voice over IP (VoIP)&nbsp;",
+   "desc": "A technology that converts a person’s voice into a digital signal and allows them to make calls over a computer, or another device."
+ },
+ {
+   "id": "V",
+   "title": "Voice PSTN",
+   "desc": "A UJET feature that supports inbound calls over PSTN as well as outbound calling via the agent dial pad or click-to-call within the CRM."
+ },
+ {
+   "id": "V",
+   "title": "Voice XML (VXML)",
+   "desc": "A markup language similar to HTML that enables a user to interact with an application using voice recognition technology."
+ },
+ {
+   "id": "W",
+   "title": "Wallboards",
+   "desc": "Screens in a contact center that allow agents and supervisors to view real-time performance."
+ },
+ {
+   "id": "W",
+   "title": "Web SDK",
+   "desc": "A software development kit (SDK) is a set of tools provided by a software or hardware vendor. UJET’s SDKs proactively engage customers at the right time and use web page views and CRM data to route visitors to the right team. "
+ },
+ {
+   "id": "W",
+   "title": "Webchat",
+   "desc": "See “Chat”"
+ },
+ {
+   "id": "W",
+   "title": "Workflow",
+   "desc": "A system that tracks the optimal execution of business processes to improve efficiency."
+ },
+ {
+   "id": "W",
+   "title": "Workforce Engagement (WEM)",
+   "desc": "A strategy to increase agent engagement in a contact center."
+ },
+ {
+   "id": "W",
+   "title": "Workforce Management (WFM)",
+   "desc": "Managing and monitoring agents in a contact center. WFM tasks include training agents, scheduling, forecasting, and more."
+ },
+ {
+   "id": "W",
+   "title": "Workforce Optimization (WFO)",
+   "desc": "Tools that improve the customer experience and agent efficiency, including AI forecasting, quality management, performance reviews, coaching, and more. "
+ },
+ {
+   "id": "W",
+   "title": "Workforce Planning",
+   "desc": "See “Workforce Management”"
+ },
+ {
+   "id": "W",
+   "title": "Workload Management",
+   "desc": "Real-time monitoring and distribution of work within a contact center based on current call volume. "
+ }
+]

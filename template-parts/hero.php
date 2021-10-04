@@ -12,6 +12,8 @@ if ($hero) {
     $background = $hero['background'];
     $altText = $hero['alt_text'];
     $rightImage = $hero['right_image'];
+    $rightImageLink = $hero['right_image_link'];
+    $rightImageTitle = $hero['right_image_title'];
     $repeater_separator = $hero['repeater_separator'];
     $htag       = ( $hero['htag'] ) ? $hero['htag'] : "h2";
     $imgWidth   = $hero['image_width'] ? $hero['image_width'] : "auto";
@@ -190,7 +192,13 @@ type="text/javascript"></script>
 
                     <?php if (isset($rightImage['url'])) { ?>
                         <div class="right-image">
+                        <?php if (!empty($rightImageLink['url'])) { ?>
+                            <a href="<?php echo $rightImageLink['url']; ?>" title="<?php echo $rightImageTitle; ?>">
+                        <?php } ?>
                             <img alt="" src="<?php echo $rightImage['url']; ?>" width="<?php echo $imgWidth; ?>" height="<?php echo $imgHeight; ?>">
+                        <?php if (!empty($rightImageLink['url'])) { ?>   
+                            </a>
+                        <?php } ?>
                         </div>
                     <?php } ?>
 

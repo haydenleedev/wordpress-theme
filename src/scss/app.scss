@@ -5,13 +5,16 @@
     background: inline('../images/_christmas-family-pic.jpg') no-repeat center center;
  */
 // Global
+@import "global/mixins";
 @import "global/fonts";
 @import "global/colors";
 @import "global/twentynineteen";
-@import "global/nav";
 
 // Modules
 @import "modules/modules";
 @import "modules/popup";
 @import "modules/pricing";
-
+@import "modules/007";
+@import "modules/form.module";
+@import "modules/layout.module";
+@import "modules/footer-simple";

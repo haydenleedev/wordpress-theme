@@ -1,0 +1,226 @@
+.header-simple {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1084px;
+}
+.header-simple img {
+  margin: 1rem 0 0.2rem 0;
+  position: relative;
+  z-index: 2;
+}
+.bg-full-img {
+  position: relative;
+  background: $color-darkpurple;
+  background: radial-gradient(
+    circle,
+    $color-lightpurple 0%,
+    $color-darkpurple 67%
+  );
+  overflow: hidden;
+  z-index: 0;
+}
+.barrel-wrap {
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+}
+.barrel {
+  position: absolute;
+  top: -90%;
+  left: -100%;
+  z-index: 1;
+  padding: 0 0 1.5rem 0;
+  width: 300%;
+  height: 300%;
+  -webkit-animation: spin 8s ease-in-out 1;
+  -moz-animation: spin 8s ease-in-out 1;
+  animation: spin 8s ease-in-out 1;
+  background: url("../images/barrel-purple.svg") no-repeat center center;
+  opacity: 0.7;
+  transition: all 8s ease-in-out;
+}
+
+.circle-cta {
+  width: 20rem;
+  height: 20rem;
+  background-color: $color-white;
+  margin: 0 auto;
+  color: $color-black;
+  border-radius: 50%;
+}
+.cta-wrapper {
+  position: relative;
+  z-index: 2;
+  padding: 0;
+  background: $color-black;
+  background: radial-gradient(
+    circle,
+    rgba(20, 1, 43, 1) 52%,
+    rgba(20, 1, 43, 0) 66%
+  );
+  border-radius: 50%;
+  width: 25rem;
+  height: 25rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.cta-wrapper-link:hover .cta-wrapper {
+  transform: scale(1.1);
+}
+
+.cta-wrapper-link:hover ~ .barrel {
+  transform: rotate(360deg);
+  transition: transform 8s ease-in-out;
+}
+.cta-wrapper-link:hover .btn-purple {
+  background-color: $color-darkpurple;
+  border-color: $color-darkpurple;
+  color: $color-white;
+}
+.cta-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  padding: 2.7rem;
+  align-items: center;
+}
+.btn.small {
+  padding: 0.7rem 1.4rem;
+  max-width: 180px;
+}
+.flex {
+  display: block;
+}
+.col-4-box,
+.col-3-box,
+.col-2-box {
+  border-radius: 1rem;
+  padding: 1.3rem 2rem;
+  text-align: center;
+  width: 96%;
+  box-sizing: border-box;
+  margin: 0 0 0.8rem;
+}
+.bg-shadow {
+  -webkit-box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+.images-list.medium-title#seven-on-row .grid-container .section-title {
+  font-size: 28px;
+  max-width: 600px;
+  padding-bottom: 0;
+}
+.text-blue:hover {
+  color: $color-darkblue;
+}
+.form-center .form-with-image .mktoForm {
+  flex-direction: column;
+}
+.form-center .form-with-image .mktoForm .mktoFormRow {
+  margin: 0 0.5rem;
+}
+.form-center .col-right.form-shortcode {
+  display: block;
+  margin: 0 auto;
+}
+.form-center .col-right.form-shortcode h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form-center .form-with-image {
+  padding-top: 0;
+}
+.form-center
+  .form-with-image
+  .mktoForm
+  .mktoButtonRow
+  .mktoButtonWrap.mktoSimple
+  .mktoButton {
+  background-color: $color-orange !important;
+  border-color: $color-orange;
+  font-weight: 600;
+}
+.col-center.form-with-image .mktoForm .mktoFormRow {
+  input,
+  select {
+    border: 1px solid $color-darknavy !important;
+    background-color: $color-white;
+  }
+}
+.col-center.form-shortcode {
+  padding: 2rem;
+  background-color: #f0f6ff;
+}
+.col-center.form-shortcode h2 {
+  padding-bottom: 1.5rem;
+}
+
+.col-center .mktoButtonRow {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+.pt-0 {
+  padding-top: 0;
+}
+
+@-moz-keyframes spin {
+  0% {
+    -webkit-transform: rotate(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 860px) {
+  .flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  .col-4-box {
+    width: 23%;
+    margin: 0.7rem;
+  }
+  .col-3-box {
+    width: 31%;
+    margin: 0.7rem;
+  }
+  .col-2-box {
+    width: 48.5%;
+    margin: 0.7rem;
+  }
+  .form-center .form-with-image .mktoForm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 900px;
+  }
+}

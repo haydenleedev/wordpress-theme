@@ -79,11 +79,11 @@ $currentDateTime = date ( "Ymd");
 
                         <?php
                         } // if ($currentDateTime < $eventEndDate)) {
-                            else {
-                                echo "<p class=\"text-center\">There are no upcoming events.  Please check back soon.</p>";
-                            }
+                           
 
                         wp_reset_postdata();
+                    }  else {
+                        echo "<p class=\"text-center\">There are no upcoming events.  Please check back soon.</p>";
                     }
                 } ?>
             </div>

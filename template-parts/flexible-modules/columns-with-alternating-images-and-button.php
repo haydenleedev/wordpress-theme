@@ -40,6 +40,7 @@ type="text/javascript"></script>
                     $columnImage     = get_sub_field( 'image' );
                     $altText         = get_sub_field( 'alt_text' ); 
                     $htag2       = ( get_sub_field('htag2') ) ? get_sub_field('htag2') : "h3";
+                    $fontSize       = ( get_sub_field('font_size') ) ? ' ' . ( get_sub_field('font_size') ) : "";
                     $addingVideo         = get_sub_field( 'adding_video' ); 
                     $video         = get_sub_field( 'video' ); 
                     $imgWidth   = get_sub_field('image_width') ? get_sub_field('image_width') : $columnImage['width'];
@@ -97,7 +98,7 @@ type="text/javascript"></script>
 
                             <div class="description">
                                 <?php if ( ! empty( $columnTitle ) ) { ?>
-                                    <<?php echo $htag2; ?> class="description__title"><?php echo $columnTitle ?></<?php echo $htag2; ?>>
+                                    <<?php echo $htag2; ?> class="description__title<?php echo $fontSize; ?>"><?php echo $columnTitle ?></<?php echo $htag2; ?>>
                                 <?php } ?>
 
 
