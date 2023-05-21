@@ -29,7 +29,7 @@
 }
 
 @function toRem($value) {
-  $remValue: math.div($value, 16);
+  $remValue: math.div($value, 16) + rem;
   @return $remValue;
 }
 
@@ -81,4 +81,9 @@
   -webkit-box-shadow: 0 0 30px 2px rgb(0 0 0 / 12%);
   box-shadow: 0 0 30px 2px rgb(0 0 0 / 12%);
   background-color: $color-white;
+}
+@mixin shadowBlue() {
+  -webkit-box-shadow: 0 0 30px 2px rgb(0 115 170 / 12%);
+  box-shadow: 0 0 30px 2px rgb(0 115 170 / 12%);
+  border-radius: 10px;
 }

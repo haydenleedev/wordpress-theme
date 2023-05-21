@@ -4,12 +4,13 @@ $cloudinaryVideo        = get_field( 'add_cloudinary_video' );
 
 if ($hero) {
     $sectionId = $hero['section_id'];
-    $sectionClass = $hero['section_class'];
+    $sectionClass = ' ' . $hero['section_class'];
     $title = $hero['title'];
-    $titleSize = $hero['font_size'] ? $hero['font_size'] : "";
+    $titleSize = $hero['font_size'] ? $hero['font_size'] : "text-50px";
     $subTitle = $hero['sub_title'];
     $text = $hero['text'];
     $button = $hero['button'];
+    $button2 = $hero['button_2'];
     $crop = $hero['crop'] ? 'crop--' . $hero['crop'] : '';
     $background = $hero['background'];
     $altText = $hero['alt_text'];
@@ -24,6 +25,8 @@ if ($hero) {
     $addingVideo         = $hero['adding_video']; 
     $video         = $hero['video']; 
     $layout = $hero['layout_style'];
+    $addSvg = $hero['add_svg'];
+    $svgCode = $hero['svg_code'];
     ?>
 
 <?php if($cloudinaryVideo) { ?>
@@ -35,27 +38,35 @@ type="text/javascript"></script>
 
 <?php if($layout == 'image_right') { ?>
 
-    <section class="hero-section-new grid">
+    <section class="hero-section-new grid relative<?php echo $sectionClass; ?> " data-inviewport="color-in">
         <div class="grid-container row align-items-center">
 
-            <div class="col layout col-2 flex-start pt-40px pb-40px">
-                    <<?php echo $htag; ?> class="title mb-40px text-600 text-50px<?php echo $titleSize; ?>"><?php echo $title; ?></<?php echo $htag; ?>>
+            <div class="col layout col-2 flex-start pt-40px pb-40px" >
+                    <<?php echo $htag; ?> class="title mb-40px text-600 <?php echo $titleSize; ?><?php echo $titleSize; ?>"><?php echo $title; ?></<?php echo $htag; ?>>
                     <?php if ($subTitle != '') { ?>
                         <p class="text-22px pb-0"><?php echo $subTitle; ?></p>
                     <?php } ?>
                     <?php if ($text != '') { ?>
                         <?php echo $text; ?>
                     <?php } ?>
+                    <div class="flex">
                     <?php if (!empty($button)) { ?>
                             <a class="btn btn-blue btn-radius" href="<?php echo $button['url']; ?>"
                             target="<?php echo $button['target']; ?>"><?php echo $button['title']; ?></a>
                     <?php } ?>
+                    <?php if (!empty($button) & !empty($button2)) { ?>
+                            <a class="btn btn-blue btn-radius ml-20px" href="<?php echo $button2['url']; ?>"
+                            target="<?php echo $button2['target']; ?>"><?php echo $button2['title']; ?></a>
+                    <?php } ?>
+                    </div>
             </div>
-            <div class="col layout col-2 flex-row flex-end">
-                    <?php if (isset($rightImage['url'])) { ?>
+            <div class="col layout col-2 flex-row flex-end" data-inviewport="translate-y">
+                    <?php if (isset($rightImage['url']) && !$addSvg) { ?>
                         <img src="<?php echo $rightImage['url']; ?>" width="<?php echo $imgWidth; ?>" height="<?php echo $imgHeight; ?>" alt="" />
 
-                    <?php } ?>
+                    <?php } else if ($addSvg) { 
+                        echo $svgCode;
+                     } ?>
             </div>
         </div>
     </section>

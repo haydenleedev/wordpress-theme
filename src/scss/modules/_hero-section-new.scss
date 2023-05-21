@@ -1,0 +1,114 @@
+/* new hero */
+
+.hero-section-new .flex-start {
+  position: relative;
+  z-index: 2;
+}
+.hero-section-new .title {
+  line-height: 1.2em;
+}
+.hero-section-new a.btn {
+  font-size: 18px;
+}
+.hero-section-new .row .btn.btn-blue {
+  border: 2px solid #00c9e5;
+  margin-top: 2rem;
+}
+.hero-section-new .col > *,
+.hero-section-new a {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 0;
+}
+
+.page-template-page-gcp .header.sticky {
+  position: fixed;
+  top: auto;
+  z-index: 9;
+  background: #fff !important;
+  box-shadow: 2px 3px 5px 3px rgb(0 0 0 / 10%);
+}
+
+.page-template-page-landing,
+.page-template-page-gcp {
+  .hero-section-new {
+    background: rgb(226, 238, 255);
+  }
+}
+.page-template-page-landing,
+.page-template-page-gcp {
+  header {
+    background: #ffffff;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hero-section-new .row .btn.btn-blue {
+    width: auto;
+    margin: 1rem auto;
+    display: block;
+  }
+}
+@include largeDesktop() {
+  .page-template-page-gcp {
+    header,
+    .hero-section-new {
+      background: rgb(226, 238, 255);
+      background: linear-gradient(
+        90deg,
+        rgba(226, 238, 255, 1) 0%,
+        rgba(255, 255, 255, 1) 25%,
+        rgba(226, 238, 255, 1) 50%,
+        rgba(226, 238, 255, 1) 100%
+      );
+    }
+  }
+  .page-template-page-gcp {
+    header,
+    .hero-section-new {
+      // animation-name: bg-color-lightblue;
+      // animation-duration: 0.5s;
+      //  animation-iteration-count: 1;
+      //  animation-fill-mode: forwards;
+      //   animation-delay: 0;
+      box-shadow: none;
+    }
+  }
+  .header__menu,
+  .header__menu > ul {
+    background: transparent;
+  }
+  .is-sticky header {
+    background: $color-white;
+    -webkit-box-shadow: 2px 3px 5px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 3px 5px 3px rgba(0, 0, 0, 0.1);
+  }
+}
+@include largeDesktop() {
+  .page-template-page-landing {
+    header,
+    .hero-section-new {
+      background: rgb(226, 238, 255);
+      background: linear-gradient(
+        90deg,
+        rgba(226, 238, 255, 1) 0%,
+        rgba(255, 255, 255, 1) 25%,
+        rgba(226, 238, 255, 1) 50%,
+        rgba(226, 238, 255, 1) 100%
+      );
+      box-shadow: none;
+    }
+    .header__menu,
+    .header__menu > ul {
+      background: transparent;
+    }
+    .is-sticky header {
+      background: $color-white;
+      -webkit-box-shadow: 2px 3px 5px 3px rgba(0, 0, 0, 0.1);
+      box-shadow: 2px 3px 5px 3px rgba(0, 0, 0, 0.1);
+    }
+  }
+  .hero-section-new .right-image {
+    text-align: right;
+  }
+}

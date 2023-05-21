@@ -19,7 +19,7 @@ if (!$numberOfItemsPerSlide) {
             <<?php echo $htag; ?> class="section-title"><?php echo $title; ?></<?php echo $htag; ?>>
         <?php } ?>
 
-        <div class="slider grid-container">
+        <div class="slider grid-container" data-inviewport="scale-in">
             <?php
             $index = 0;
             $maxNumberOfSlides = count($slides) / $numberOfItemsPerSlide;
@@ -45,7 +45,6 @@ if (!$numberOfItemsPerSlide) {
                         </div>
                         
 
-                        
                                 <div class="slide__subtitle">
                                 <?php echo (!empty($slideLink)) ? '<a href="' . $slideLink['url'] . '" target="' . $slideLink['target'] . '">' : ''; ?>
                                     <?php echo $slideSubtitle; ?>

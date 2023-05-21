@@ -1,17 +1,12 @@
 <?php
 /**
- * Template Name: 007 Template
+ * Template Name: 007 Movie Ticket Template
  *
  */
 
 get_header('007');
 $class   = get_field('class');
 ?>
-
-<link href="https://unpkg.com/cloudinary-video-player@1.5.3/dist/cld-video-player.light.min.css" rel="stylesheet">
-<script src="https://unpkg.com/cloudinary-core@latest/cloudinary-core-shrinkwrap.min.js" type="text/javascript"></script>
-<script src="https://unpkg.com/cloudinary-video-player@1.5.3/dist/cld-video-player.light.min.js"
-type="text/javascript"></script>
 
 <section id="primary" class="content-area<?php echo ' ' . $class; ?>">
         <main class="main no-overflow paragraph-wrapper container">
@@ -32,14 +27,13 @@ type="text/javascript"></script>
                         <img class="cta-logo aligncenter block" alt="ujet logo" src="../wp-content/uploads/2021/07/ujet-cx-logo-01.svg" width="168" height="52">
                         </figure>
                         <p class="text-28px text-600 pb-0">the secret's out</p>
-                        <span class="btn small btn-navy inline-block text-center text-18px text-center">Curious?</span>
+                        <span class="btn small btn-navy inline-block text-center text-18px text-center">Enter to Win</span>
                     </div>
                 </div>
             </div>
             </a>
 
-            <!--<img class="barrel" alt=""
-                                src="<?php // echo $staticLogo ?: './wp-content/themes/ujet/dist/images/barrel.svg'; ?>" width="100%" height="auto"> -->
+    
                        
                 <div class="barrel"></div>
                

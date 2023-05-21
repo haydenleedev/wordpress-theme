@@ -21,7 +21,7 @@ type="text/javascript"></script>
 
             <?php if ( $title != '' ) { ?>
                 <div class="grid-container">
-                    <<?php echo $htag; ?> class="section-title"><?php echo $title; ?></<?php echo $htag; ?>>
+                    <<?php echo $htag; ?> class="section-title hidden-anim"  data-inviewport="scale-in"><?php echo $title; ?></<?php echo $htag; ?>>
                 </div>
             <?php } ?>
 
@@ -45,25 +45,50 @@ type="text/javascript"></script>
                     $video         = get_sub_field( 'video' ); 
                     $imgWidth   = get_sub_field('image_width') ? get_sub_field('image_width') : $columnImage['width'];
                     $imgHeight   = get_sub_field('image_height') ? get_sub_field('image_height') : $columnImage['height'];
+                    $videoWidth   = get_sub_field('video_width') ? get_sub_field('video_width') : '540';
+                    $videoHeight   = get_sub_field('video_height') ? get_sub_field('video_height') : '478';
+                    $topPadding   = get_sub_field('top_padding') ? ' ' . get_sub_field('top_padding') : ' pt-30px';
+                    $addingQuote         = get_sub_field( 'adding_quote' ); 
+                    $quoteText         = get_sub_field( 'quote_text' ); 
+                    $quoteImage        = get_sub_field( 'quote_image' ); 
+                    $quoteImageWidth        = get_sub_field( 'quote_image_width' ) ? get_sub_field( 'quote_image_width' ): $quoteImage['width']; 
+                    $quoteImageHeight        = get_sub_field( 'quote_image_height' ) ? get_sub_field( 'quote_image_height' ) : $quoteImage['height']; 
+                    $imgAlign = get_sub_field('image_align') ? ' ' .get_sub_field('image_align') : '';
                     ?>
+                    
                     <div<?php echo ( $rowId != '' ) ? ' id="' . $rowId . '"' : ''; ?> class="row <?php echo ( $columnSide ) ? 'image-on-right' : 'image-on-left'; ?>">
                         <div class="wrapper">
 
                            
-                                <?php if (!$addingVideo) { ?>
-                                    <div class="round-image mb-40px">
-                                    <img alt="<?php echo $altText ?>" src="<?php echo $columnImage['url']; ?>" width="<?php echo $imgWidth; ?>" height="<?php echo $imgHeight; ?>">
-                                    </div>
-                                <?php } else { ?>
-                                    
-                                        <div class="round-image pt-30px">
+                        <?php if (!$addingVideo && !$addingQuote) { ?>
+                            <div class="round-image mb-40px <?php echo $imgAlign; ?>"  data-inviewport="scale-in">
+                            <img alt="<?php echo $altText ?>" src="<?php echo $columnImage['url']; ?>" width="<?php echo $imgWidth; ?>" height="<?php echo $imgHeight; ?>">
+                            </div>
+                            <?php } else if (!$addingVideo && $addingQuote) { ?>
+
+                         <div class="round-image mb-40px icon <?php echo $imgAlign; ?>" data-inviewport="scale-in">
+                             <div class="relative quote-text bg-shadow p-30px text-center" >
+                                <div class="quote-icon bg-darkblue bounce"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 47"><g stroke="#FFF" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M22 37c-1.656 0-3-1.344-3-3V19c0-1.656 1.344-3 3-3h21c1.656 0 3 1.344 3 3v15c0 1.656-1.344 3-3 3h-3v9l-9-9h-9z"></path><path d="M13 25l-6 6v-9H4c-1.656 0-3-1.344-3-3V4c0-1.656 1.344-3 3-3h21c1.656 0 3 1.344 3 3v6"></path></g></svg></div>
+                                <div class="text-left text-italic text-20px text-400 pt-30px pb-0">
+                                    <?php echo $quoteText; ?>
+                            </div>
+                               <?php if ($quoteImage['url']) { ?>
+                                <img alt="" src="<?php echo $quoteImage['url']; ?>" width="<?php echo $quoteImageWidth; ?>" height="<?php echo $quoteImageHeight; ?>">
+                                <?php } ?>
+
+                            </div>
+                        </div>
+
+                        <?php } else { ?>
+                            
+                                <div class="round-image<?php echo $topPadding; ?><?php echo $imgAlign; ?>"  data-inviewport="scale-in">
 
                                    
 
         <video
             id="ujet-player-<?php echo $count; ?>"
             controls
-            class="ujet-video-player" width="540" height="478">
+            class="ujet-video-player" width="<?php echo $videoWidth; ?>" height="<?php echo $videoHeight; ?>">
         </video>
 
         <script>
@@ -96,7 +121,7 @@ type="text/javascript"></script>
                                  <?php $count++; } ?>
                             
 
-                            <div class="description">
+                            <div class="description" >
                                 <?php if ( ! empty( $columnTitle ) ) { ?>
                                     <<?php echo $htag2; ?> class="description__title<?php echo $fontSize; ?>"><?php echo $columnTitle ?></<?php echo $htag2; ?>>
                                 <?php } ?>

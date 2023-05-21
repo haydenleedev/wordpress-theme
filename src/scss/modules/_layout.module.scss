@@ -66,6 +66,10 @@
     }
   }
 }
+.hero-section-new.grid .col {
+  padding-bottom: 0;
+}
+
 .align-items-center {
   align-items: center;
 }
@@ -243,4 +247,8 @@
 
 .page-title {
   font-size: $size-32px;
+}
+.plr-10px {
+  padding-left: toRem(10);
+  padding-right: toRem(10);
 }

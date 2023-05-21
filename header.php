@@ -273,7 +273,7 @@ body_class( $blog_class ); ?>>
     $rowFour = ($rowOne == 'four_cols') ? "grid-row-4" : $rowThree;
 
     ?>
-    <header class="header">
+    <header class="header" data-inviewport="color-in">
         <div class="header__container">
             <div class="site-branding">
                 <a href="<?php echo bloginfo( 'url' ); ?>">

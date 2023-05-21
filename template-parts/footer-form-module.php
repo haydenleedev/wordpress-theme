@@ -6,13 +6,14 @@ if ($footerForm) {
     $title = $footerForm['title'] ? $footerForm['title'] : "I Want to Learn More";
     $htag       = ( $footerForm['htag'] ) ? $footerForm['htag'] : "h2";
     $formShortcode = $footerForm['form_shortcode'];
+    $bgColor = $footerForm['bg_color'] ? ' ' . $footerForm['bg_color'] : ' bg-f0f6ff';
     ?>
 
     <?php if($formShortcode) { ?>
          <!-- form -->
          <a name="" id="form-go">
     <section class="form-center">
-        <div class="col-center form-shortcode form-with-image form-with-text ptb-30px mt-40px">
+        <div class="col-center form-shortcode form-with-image form-with-text ptb-30px mt-40px<?php echo $bgColor; ?>">
             <<?php echo $htag; ?> class="form-title text-center text-600"><?php echo $title; ?></<?php echo $htag; ?>>   
 
             <?php echo $formShortcode; ?>

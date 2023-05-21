@@ -11,11 +11,7 @@
 .bg-full-img {
   position: relative;
   background: $color-darkpurple;
-  background: radial-gradient(
-    circle,
-    $color-lightpurple 0%,
-    $color-darkpurple 67%
-  );
+  background: radial-gradient(circle, $color-lightnavy 0%, $color-darknavy 67%);
   overflow: hidden;
   z-index: 0;
 }
@@ -79,6 +75,11 @@
 .cta-wrapper-link:hover .btn-purple {
   background-color: $color-darkpurple;
   border-color: $color-darkpurple;
+  color: $color-white;
+}
+.cta-wrapper-link:hover .btn-navy {
+  background-color: $color-darkblue;
+  border-color: $color-darkblue;
   color: $color-white;
 }
 .cta-inner {

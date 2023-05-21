@@ -32,6 +32,9 @@ if ( have_rows( 'content' ) ) :
             case 'quote_banner':
                 get_template_part( 'template-parts/flexible-modules/quote_banner' );
                 break;
+            case 'partner_logo_quote':
+                get_template_part( 'template-parts/flexible-modules/partner-logos-and-quote' );
+                break;
             case 'paragraph_select':
                 get_template_part( 'template-parts/flexible-modules/paragraph_select' );
                 break;
